@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="QA War Room dashboard: live counts of rooms on this local server. No model scores or real approvals.">
+  <title>QA War Room · Dashboard</title>
+  <link rel="icon" href="/favicon.svg">
+  <link rel="stylesheet" href="/live.css">
+  <script src="/personas.js"></script>
+  <script src="/ui.js"></script>
+  <script defer src="/dashboard.js"></script>
+</head>
+<body class="page-dashboard">
+  <a class="skip-link" href="#main" data-ui="skipDashboard">Skip to dashboard</a>
+  <div id="app" class="app">
+    <aside id="sidebar" class="sidebar" aria-label="Navigation">
+      <a class="brand" href="/">
+        <span class="brand-mark" aria-hidden="true">QA</span>
+        <span class="brand-text"><strong data-ui="appName">QA War Room</strong><small data-ui="tagline"></small></span>
+      </a>
+      <nav class="nav" aria-label="Pages">
+        <a href="/" class="nav-link"><span data-icon="chat"></span><span data-ui="navChat"></span></a>
+        <a href="/dashboard.html" class="nav-link is-current" aria-current="page"><span data-icon="grid"></span><span data-ui="navDashboard"></span></a>
+        <a href="/settings.html" class="nav-link"><span data-icon="gear"></span><span data-ui="navSettings"></span></a>
+      </nav>
+      <a href="/" class="btn btn-primary btn-block"><span data-icon="plus"></span><span data-ui="newRoom"></span></a>
+      <div class="history"></div>
+      <div class="side-prefs narrow-only" role="group" data-ui-label="display">
+        <span data-ui="display"></span>
+        <button class="icon-btn lang-btn js-lang" type="button">EN</button>
+        <button class="icon-btn js-theme" type="button"></button>
+      </div>
+      <div class="side-foot">
+        <a href="/manual.html" class="nav-link subtle"><span data-icon="desk"></span><span data-ui="navManual"></span></a>
+        <p class="local-note"><span class="dot dot-live" aria-hidden="true"></span><span data-ui="localOnly"></span></p>
+      </div>
+    </aside>
+    <div id="scrim" class="scrim"></div>
+
+    <main id="main" class="dash" tabindex="-1">
+      <header class="topbar">
+        <button id="nav-toggle" class="icon-btn only-narrow" type="button" aria-controls="sidebar" aria-expanded="false" data-ui-label="menu"><span data-icon="menu"></span></button>
+        <div class="dash-title">
+          <h1 data-ui="navDashboard"></h1>
+          <p><span id="updated-dot" class="dot dot-muted" aria-hidden="true"></span><span id="updated-text" aria-live="polite"></span></p>
+        </div>
+        <div class="topbar-actions">
+          <button id="refresh" class="icon-btn" type="button" data-ui-label="refresh" data-ui-title="autoRefresh"><span data-icon="refresh"></span></button>
+          <button id="language-toggle" class="icon-btn lang-btn js-lang wide-only" type="button">EN</button>
+          <button id="theme-toggle" class="icon-btn js-theme wide-only" type="button"></button>
+        </div>
+      </header>
+
+      <div class="dash-content">
+        <div id="banner" class="banner banner-danger" role="status" aria-live="polite" hidden>
+          <span class="banner-icon" data-icon="alert"></span>
+          <span id="banner-text" class="banner-text"></span>
+          <button id="banner-retry" class="btn btn-small" type="button" data-ui="retry"></button>
+        </div>
+
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-text">
+            <h2 id="hero-title" data-ui="dashTitle"></h2>
+            <p data-ui="dashIntro"></p>
+          </div>
+          <div id="hero-lineup" class="hero-lineup"></div>
+          <a class="btn btn-primary" href="/"><span data-icon="plus"></span><span data-ui="newRoom"></span></a>
+        </section>
+
+        <section class="kpis panel" aria-label="Summary">
+          <article class="kpi"><p class="kpi-label"><span class="dot dot-muted"></span><span data-ui="kpiCases"></span></p><strong id="kpi-cases" class="kpi-value is-loading">—</strong><p class="kpi-hint" data-ui="kpiCasesHint"></p></article>
+          <article class="kpi"><p class="kpi-label"><span class="dot dot-muted"></span><span data-ui="kpiRooms"></span></p><strong id="kpi-rooms" class="kpi-value is-loading">—</strong><p class="kpi-hint" data-ui="kpiRoomsHint"></p></article>
+          <article class="kpi"><p class="kpi-label"><span class="dot dot-live"></span><span data-ui="kpiActive"></span></p><strong id="kpi-active" class="kpi-value is-loading">—</strong><p class="kpi-hint" data-ui="kpiActiveHint"></p></article>
+          <article class="kpi"><p class="kpi-label"><span class="dot dot-done"></span><span data-ui="kpiCompleted"></span></p><strong id="kpi-completed" class="kpi-value is-loading">—</strong><p class="kpi-hint" data-ui="kpiCompletedHint"></p></article>
+          <article class="kpi"><p class="kpi-label"><span class="dot dot-partial"></span><span data-ui="kpiUnfinished"></span></p><strong id="kpi-unfinished" class="kpi-value is-loading">—</strong><p class="kpi-hint" data-ui="kpiUnfinishedHint"></p></article>
+        </section>
+
+        <section class="panel" aria-labelledby="mix-title">
+          <div class="panel-head"><h2 id="mix-title" data-ui="statusMix"></h2></div>
+          <div id="status-bar" class="status-bar" role="img"></div>
+          <ul id="legend" class="legend"></ul>
+          <p id="mix-empty" class="hint" data-ui="statusMixEmpty" hidden></p>
+        </section>
+
+        <div class="dash-grid">
+          <section class="panel" aria-labelledby="rooms-title">
+            <div class="panel-head">
+              <h2 id="rooms-title" data-ui="recentRooms"></h2>
+              <div id="filters" class="filters" role="group" aria-labelledby="rooms-title"></div>
+            </div>
+            <div id="rooms"><div class="skeleton-row"></div><div class="skeleton-row"></div><div class="skeleton-row"></div></div>
+          </section>
+
+          <section class="panel" aria-labelledby="cases-title">
+            <div class="panel-head">
+              <div><h2 id="cases-title" data-ui="casesTitle"></h2><p data-ui="casesIntro"></p></div>
+            </div>
+            <ul id="case-usage" class="case-usage"><li class="skeleton-row"></li><li class="skeleton-row"></li></ul>
+          </section>
+        </div>
+
+        <p class="data-note"><span data-icon="info"></span><span><span data-ui="dataNote"></span> <span data-ui="castNote"></span></span></p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

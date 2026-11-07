@@ -1,0 +1,63 @@
+{
+  "created_utc": "2026-11-07",
+  "purpose": "Native benchmark evaluation; do not train or index answers",
+  "sources": [
+    {
+      "id": "contractnli",
+      "repository": "https://github.com/stanfordnlp/contract-nli",
+      "commit": "eced6528dd3c1d14d73f9a87df8f7bdbc03126f9",
+      "archive_sha256": "e03fc77bbf8b53e2976a250e81d8a294bc3d5e5fb014521e477dee9340d6287b",
+      "archive_bytes": 65362913,
+      "source_url": "https://raw.githubusercontent.com/stanfordnlp/contract-nli/eced6528dd3c1d14d73f9a87df8f7bdbc03126f9/resources/contract-nli.zip",
+      "included": "Original train/dev/test JSON + LICENSE. Original individual PDFs not included.",
+      "citation": "https://aclanthology.org/2021.findings-emnlp.164/",
+      "license": "CC BY 4.0 (see original LICENSE) at dataset level; original contracts have source provenance."
+    },
+    {
+      "id": "drugqa",
+      "repository": "https://github.com/DodgeLU/Sino-US-DrugQA",
+      "commit": "cd026a27a5e039863de9080b8d7d95acaf1f5a39",
+      "source_url": "https://raw.githubusercontent.com/DodgeLU/Sino-US-DrugQA/cd026a27a5e039863de9080b8d7d95acaf1f5a39/data/release/all.jsonl",
+      "citation": "https://doi.org/10.1371/journal.pone.0343858",
+      "license": "CC BY 4.0 (see original LICENSE)",
+      "included": "Authoritative bilingual all.jsonl, LICENSE, DATASET_CARD.md"
+    }
+  ],
+  "files": [
+    {
+      "path": "contractnli/LICENSE",
+      "bytes": 18656,
+      "sha256": "9e5f1b3c610b9c2da5c313bf81d577a7d1acec686bdb0384edefa6df0f90cd94"
+    },
+    {
+      "path": "contractnli/dev.json",
+      "bytes": 1183107,
+      "sha256": "310af7d661d2ab50ee3700169cef524c75f39fb296bbf5a515c229eb0f42e68e"
+    },
+    {
+      "path": "contractnli/test.json",
+      "bytes": 2260203,
+      "sha256": "460267b56052a2dc5aead98eb35eadef9e6734d5723d37b4a9790e410f812387"
+    },
+    {
+      "path": "contractnli/train.json",
+      "bytes": 7608211,
+      "sha256": "dbceb356cd6203b35b27be94a5fa85e499a81c34c42c89ad53060b39f0257ba5"
+    },
+    {
+      "path": "drugqa/DATASET_CARD.md",
+      "bytes": 11126,
+      "sha256": "83d02a6de07937b07777d29cbe85bf979ad17a1002d30a72fb77b18c2eb14869"
+    },
+    {
+      "path": "drugqa/LICENSE",
+      "bytes": 574,
+      "sha256": "ef9117b59234d47f1fb661bb2b2c8433f1696483882dc4fa6b057c6e75f5d645"
+    },
+    {
+      "path": "drugqa/all.jsonl",
+      "bytes": 15374047,
+      "sha256": "757b9bc7e5ee2d38ab5ed43877b1d87809cb5131621d106671bc27996da1c499"
+    }
+  ]
+}

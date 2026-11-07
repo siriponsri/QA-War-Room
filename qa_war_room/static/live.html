@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="QA War Room live conversation: an offline, rule-based simulated team reviews fictional CAPA evidence record by record.">
+  <title>QA War Room · Live conversation</title>
+  <link rel="icon" href="/favicon.svg">
+  <link rel="stylesheet" href="/live.css">
+  <script src="/personas.js"></script>
+  <script src="/ui.js"></script>
+  <script defer src="/live.js"></script>
+</head>
+<body class="page-chat">
+  <a class="skip-link" href="#main" data-ui="skipChat">Skip to conversation</a>
+  <div id="app" class="app">
+
+    <!-- Left rail: navigation and this browser's room list -->
+    <aside id="sidebar" class="sidebar" aria-label="Navigation and rooms">
+      <a class="brand" href="/">
+        <span class="brand-mark" aria-hidden="true">QA</span>
+        <span class="brand-text"><strong data-ui="appName">QA War Room</strong><small data-ui="tagline"></small></span>
+      </a>
+      <nav class="nav" aria-label="Pages">
+        <a href="/" class="nav-link is-current" aria-current="page"><span data-icon="chat"></span><span data-ui="navChat"></span></a>
+        <a href="/dashboard.html" class="nav-link"><span data-icon="grid"></span><span data-ui="navDashboard"></span></a>
+        <a href="/settings.html" class="nav-link"><span data-icon="gear"></span><span data-ui="navSettings"></span></a>
+      </nav>
+      <button id="new-room" class="btn btn-primary btn-block" type="button"><span data-icon="plus"></span><span data-ui="newRoom"></span></button>
+      <h2 class="side-label" data-ui="yourRooms"></h2>
+      <div id="room-history" class="history"></div>
+      <div class="side-prefs narrow-only" role="group" data-ui-label="display">
+        <span data-ui="display"></span>
+        <button class="icon-btn lang-btn js-lang" type="button">EN</button>
+        <button class="icon-btn js-theme" type="button"></button>
+      </div>
+      <div class="side-foot">
+        <a href="/manual.html" class="nav-link subtle"><span data-icon="desk"></span><span data-ui="navManual"></span></a>
+        <p class="local-note"><span class="dot dot-live" aria-hidden="true"></span><span data-ui="localOnly"></span></p>
+      </div>
+    </aside>
+    <div id="scrim" class="scrim"></div>
+
+    <!-- Conversation column -->
+    <main id="main" class="chat" tabindex="-1">
+      <header class="topbar">
+        <button id="nav-toggle" class="icon-btn only-narrow" type="button" aria-controls="sidebar" aria-expanded="false" data-ui-label="menu"><span data-icon="menu"></span></button>
+        <div class="room-heading">
+          <span id="room-avatar" class="room-avatar" aria-hidden="true">QA</span>
+          <div id="stage" class="team-stack" role="group" data-ui-label="stageLabel" hidden></div>
+          <div id="stage" class="team-stack" role="group" data-ui-label="stageLabel" hidden></div>
+          <div class="room-heading-text">
+            <h1 id="room-title" data-ui="navChat"></h1>
+            <p id="room-subtitle" class="room-sub"><span class="badge badge-muted" data-ui="demoBadge"></span></p>
+          </div>
+        </div>
+        <div id="timer" class="timer" hidden>
+          <span data-icon="clock"></span>
+          <span class="sr-only" data-ui="timeLeft"></span>
+          <span id="countdown" class="timer-value" role="timer" aria-live="off">00:00</span>
+        </div>
+        <div class="topbar-actions">
+          <button id="language-toggle" class="icon-btn lang-btn js-lang wide-only" type="button">EN</button>
+          <button id="theme-toggle" class="icon-btn js-theme wide-only" type="button"></button>
+          <button id="details-toggle" class="icon-btn" type="button" aria-controls="details" aria-expanded="false" data-ui-label="roomDetails" hidden><span data-icon="info"></span></button>
+        </div>
+      </header>
+
+      <div id="banner" class="banner" role="status" aria-live="polite" hidden>
+        <span id="banner-icon" class="banner-icon"></span>
+        <span id="banner-text" class="banner-text"></span>
+        <button id="banner-retry" class="btn btn-small" type="button" data-ui="retry" hidden></button>
+        <button id="banner-close" class="icon-btn icon-btn-small" type="button" data-ui-label="dismiss"><span data-icon="close"></span></button>
+      </div>
+
+      <!-- Setup: choose a case, set a time, start -->
+      <section id="setup-view" class="setup-view" aria-labelledby="setup-title">
+        <form id="setup-form" class="setup" novalidate>
+          <div class="setup-hero">
+            <div class="setup-hero-text">
+              <h2 id="setup-title" class="setup-title" data-ui="setupTitle"></h2>
+              <p class="setup-intro" data-ui="setupIntro"></p>
+            </div>
+            <div id="setup-lineup" class="setup-lineup"></div>
+          </div>
+
+          <fieldset class="step">
+            <legend><span class="step-num">1</span><span data-ui="stepCase"></span></legend>
+            <div id="case-list" class="case-list" role="radiogroup" aria-busy="true"></div>
+            <div id="case-claim" class="claim-preview" hidden>
+              <span class="claim-label" data-ui="claimLabel"></span>
+              <p id="case-claim-text"></p>
+            </div>
+          </fieldset>
+
+          <fieldset class="step">
+            <legend><span class="step-num">2</span><span data-ui="stepTime"></span></legend>
+            <div class="chips" id="time-chips">
+              <label class="chip"><input type="radio" name="time" value="60" checked><span data-ui="minute1"></span></label>
+              <label class="chip"><input type="radio" name="time" value="120"><span data-ui="minute2"></span></label>
+              <label class="chip"><input type="radio" name="time" value="300"><span data-ui="minute5"></span></label>
+              <label class="chip"><input type="radio" name="time" value="custom"><span data-ui="custom"></span></label>
+            </div>
+            <div id="custom-time-row" class="custom-time" hidden>
+              <label for="custom-time" data-ui="customSeconds"></label>
+              <div class="input-suffix">
+                <input id="custom-time" type="number" inputmode="numeric" min="1" max="300" step="1" value="30">
+                <span data-ui="seconds"></span>
+              </div>
+            </div>
+            <p class="hint" data-ui="timeHint"></p>
+          </fieldset>
+
+          <details class="advanced" id="advanced">
+            <summary><span data-ui="advanced"></span></summary>
+            <p class="hint" data-ui="advancedHint"></p>
+            <div class="advanced-grid">
+              <div class="field">
+                <label for="role-select" data-ui="strategy"></label>
+                <select id="role-select">
+                  <option value="auditor-expert-01" data-ui="careful"></option>
+                  <option value="auditor-expert-02" data-ui="risks"></option>
+                  <option value="auditor-newbie-02" data-ui="order"></option>
+                  <option value="auditor-newbie-01" data-ui="shortcut"></option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="pace" data-ui="pace"></label>
+                <select id="pace">
+                  <option value="650" data-ui="normal"></option>
+                  <option value="1200" data-ui="relaxed"></option>
+                  <option value="150" data-ui="fast"></option>
+                </select>
+              </div>
+            </div>
+          </details>
+
+          <p class="setup-foot"><span data-ui="setupFoot"></span> <span data-ui="castNote"></span></p>
+          <div class="start-bar">
+            <p id="setup-error" class="form-error" role="alert" hidden></p>
+            <div class="start-row">
+              <p id="start-summary" class="start-summary" aria-live="polite"></p>
+              <button id="start-button" class="btn btn-primary btn-large" type="submit" disabled>
+                <span data-icon="play"></span><span id="start-label" data-ui="start"></span>
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <!-- Live room -->
+      <section id="room-view" class="room-view" aria-labelledby="room-title" hidden>
+        <div class="claim-bar">
+          <button id="claim-toggle" class="claim-toggle" type="button" aria-expanded="false" aria-controls="claim-full">
+            <span class="claim-label" data-ui="claimLabel"></span>
+            <span id="claim-short" class="claim-short"></span>
+          </button>
+          <p id="claim-full" class="claim-full" hidden></p>
+        </div>
+
+        <div id="chat-scroll" class="chat-scroll" tabindex="0" aria-label="Conversation">
+          <ol id="message-list" class="messages" role="log" aria-live="polite" aria-relevant="additions"></ol>
+          <div id="typing" class="typing" aria-hidden="true" hidden>
+            <span id="typing-avatar" class="avatar"></span>
+            <div class="typing-body"><span id="typing-text" class="typing-text"></span><span class="dots"><i></i><i></i><i></i></span></div>
+          </div>
+          <section id="outcome" class="outcome" aria-labelledby="outcome-title" hidden></section>
+        </div>
+        <button id="latest-button" class="latest" type="button" hidden><span data-ui="latest"></span><span data-icon="down"></span></button>
+
+        <footer class="dock">
+          <div id="paused-hint" class="paused-hint" hidden>
+            <span data-icon="pause"></span>
+            <span data-ui="pausedHint"></span>
+            <button id="paused-evidence" class="link-btn" type="button" data-ui="openEvidence"></button>
+          </div>
+          <div class="dock-row">
+            <div class="controls">
+              <button id="pause-button" class="btn btn-soft" type="button"><span id="pause-icon"></span><span id="pause-label"></span></button>
+              <button id="stop-button" class="btn btn-ghost-danger" type="button"><span data-icon="stop"></span><span data-ui="stop"></span></button>
+            </div>
+            <form id="composer" class="composer">
+              <label for="note-input" class="sr-only" data-ui="noteLabel"></label>
+              <input id="note-input" autocomplete="off" maxlength="1000" data-ui-placeholder="notePlaceholder" aria-describedby="note-help">
+              <button id="send-note" class="send-btn" type="submit" data-ui-label="sendNote"><span data-icon="send"></span></button>
+            </form>
+          </div>
+          <div id="ended-row" class="ended-row" hidden>
+            <span class="ended-text" data-ui="roomEnded"></span>
+            <a id="ended-download" class="btn btn-soft" download><span data-icon="download"></span><span data-ui="download"></span></a>
+            <button id="ended-new" class="btn btn-primary" type="button"><span data-icon="plus"></span><span data-ui="startAnother"></span></button>
+          </div>
+          <p id="note-help" class="hint dock-hint" data-ui="noteHelp"></p>
+        </footer>
+      </section>
+    </main>
+
+    <!-- Right panel: team, progress, evidence, report -->
+    <aside id="details" class="details" aria-labelledby="details-title">
+      <header class="details-head">
+        <h2 id="details-title" data-ui="roomDetails"></h2>
+        <button id="details-close" class="icon-btn" type="button" data-ui-label="closeDetails"><span data-icon="close"></span></button>
+      </header>
+      <div class="details-body">
+        <section class="panel-section">
+          <h3 class="section-title" data-ui="progress"></h3>
+          <ol id="stages" class="stages">
+            <li data-ui="stageClaim"></li><li data-ui="stageGather"></li><li data-ui="stageCheck"></li><li data-ui="stageDone"></li>
+          </ol>
+          <div class="meter-row"><span data-ui="elapsed"></span><span id="elapsed-text" class="mono"></span></div>
+          <div class="meter" aria-hidden="true"><span id="time-bar"></span></div>
+          <p class="hint" data-ui="clockNote"></p>
+        </section>
+
+        <section class="panel-section" id="evidence-section">
+          <div class="section-head">
+            <h3 class="section-title" data-ui="evidence"></h3>
+            <span id="budget-text" class="badge badge-muted"></span>
+          </div>
+          <div class="meter meter-budget" aria-hidden="true"><span id="budget-bar"></span></div>
+          <p id="evidence-hint" class="hint"></p>
+          <ul id="evidence-list" class="evidence-list"></ul>
+        </section>
+
+        <section class="panel-section">
+          <h3 class="section-title" data-ui="team"></h3>
+          <ul id="participants" class="participants"></ul>
+          <p class="hint" data-ui="teamNote"></p>
+          <p class="hint" data-ui="castNote"></p>
+          <p class="hint" data-ui="voiceNote"></p>
+        </section>
+
+        <section class="panel-section">
+          <h3 class="section-title" data-ui="downloads"></h3>
+          <div class="downloads">
+            <a id="download-th" class="btn btn-soft btn-block" download><span data-icon="download"></span><span data-ui="downloadTh"></span></a>
+            <a id="download-en" class="btn btn-soft btn-block" download><span data-icon="download"></span><span data-ui="downloadEn"></span></a>
+            <a id="download-json" class="text-link" download data-ui="downloadJson"></a>
+          </div>
+          <p class="hint" data-ui="downloadNote"></p>
+        </section>
+      </div>
+    </aside>
+  </div>
+
+  <dialog id="record-dialog" class="dialog" aria-labelledby="record-title">
+    <header class="dialog-head">
+      <span id="record-icon" class="record-icon"></span>
+      <div class="dialog-head-text">
+        <h2 id="record-title"></h2>
+        <p id="record-meta" class="hint"></p>
+      </div>
+      <button id="record-close" class="icon-btn" type="button" data-ui-label="closeRecord"><span data-icon="close"></span></button>
+    </header>
+    <div class="dialog-body">
+      <h3 class="section-title" data-ui="facts"></h3>
+      <dl id="record-facts" class="facts"></dl>
+      <p class="hint" data-ui="recordNote"></p>
+      <details class="original">
+        <summary data-ui="original"></summary>
+        <pre id="record-content" lang="en"></pre>
+      </details>
+    </div>
+  </dialog>
+
+  <dialog id="stop-dialog" class="dialog dialog-small" aria-labelledby="stop-title">
+    <form method="dialog" class="confirm">
+      <span class="confirm-icon" data-icon="alert"></span>
+      <h2 id="stop-title" data-ui="stopTitle"></h2>
+      <p data-ui="stopBody"></p>
+      <div class="confirm-actions">
+        <button value="cancel" class="btn btn-soft" data-ui="cancel"></button>
+        <button value="stop" class="btn btn-danger" data-ui="confirmStop"></button>
+      </div>
+    </form>
+  </dialog>
+</body>
+</html>

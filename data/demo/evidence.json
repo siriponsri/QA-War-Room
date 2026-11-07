@@ -1,0 +1,1173 @@
+{
+  "MFG-001": {
+    "D1": {
+      "available": true,
+      "facts": {
+        "record_type": "closure_summary",
+        "capa_id": "CAPA-2026-014",
+        "status": "closed",
+        "closure_date": "2026-07-22",
+        "claimed_effective": true
+      },
+      "content": "FICTIONAL TRAINING RECORD\nDeviation and CAPA closure cover sheet | D1 | record revision 1 | issued 2026-07-22\nCustodian: user-02\n\nCAPA-2026-014 is marked CLOSED on the cover sheet dated 2026-07-22. The author states that effectiveness has been demonstrated. This cover sheet does not reproduce supporting evidence; verify the underlying records."
+    },
+    "D2": {
+      "available": true,
+      "facts": {
+        "record_type": "closure_protocol",
+        "protocol_id": "EC-014",
+        "revision": 2,
+        "capa_id": "CAPA-2026-014",
+        "scope": {
+          "line": "BL-02",
+          "batch_ids": [
+            "B210",
+            "B211",
+            "B212"
+          ],
+          "window_start": "2026-06-15",
+          "window_end": "2026-07-15"
+        },
+        "required_procedure": {
+          "id": "SOP-BL-017",
+          "revision": 4
+        },
+        "required_operator_ids": [
+          "OP-17",
+          "OP-22",
+          "OP-31"
+        ],
+        "minimum_batches": 3,
+        "maximum_failed_batches": 0,
+        "maximum_unresolved_related_deviations": 0,
+        "closure_requires": [
+          "implementation_record",
+          "training_record",
+          "effectiveness_report",
+          "deviation_trend",
+          "status_log"
+        ]
+      },
+      "content": "FICTIONAL TRAINING RECORD\nApproved CAPA closure and effectiveness protocol | D2 | record revision 2 | issued 2026-06-01\nCustodian: user-02\n\nProtocol EC-014 revision 2 defines the complete local criteria for this exercise. Applicable CAPA: CAPA-2026-014. Scope: line BL-02; batches B210, B211, B212; window 2026-06-15 through 2026-07-15. The claim is assessed at the case's stated cutoff.\nClosure requires all of the following: (1) implementation completed on the specified line under SOP-BL-017 revision 4; (2) documented completion of this procedure revision by operators OP-17, OP-22, OP-31 before the cohort window; (3) an effectiveness report for this protocol revision covering the entire specified cohort, with at least 3 reviewed batches and no failed acceptance batches; (4) a complete current review with no unresolved related deviations; and (5) a complete current status register showing closed, not reopened. Record dates and completed reviews must be on or before the cutoff. A summary claim alone does not satisfy these criteria."
+    },
+    "D3": {
+      "available": true,
+      "facts": {
+        "record_type": "implementation_record",
+        "capa_id": "CAPA-2026-014",
+        "line": "BL-02",
+        "status": "completed",
+        "completed_on": "2026-06-12",
+        "procedure": {
+          "id": "SOP-BL-017",
+          "revision": 4
+        }
+      },
+      "content": "FICTIONAL TRAINING RECORD\nManufacturing implementation record | D3 | record revision 1 | issued 2026-06-12\nCustodian: user-01\n\nCAPA-2026-014: implementation status COMPLETED. Line BL-02; completed 2026-06-12. Controlled procedure SOP-BL-017 revision 4. Parameter changes and verification signatures are present in this fictional implementation record."
+    },
+    "D4": {
+      "available": true,
+      "facts": {
+        "record_type": "effectiveness_report",
+        "protocol_id": "EC-014",
+        "protocol_revision": 2,
+        "scope": {
+          "line": "BL-02",
+          "batch_ids": [
+            "B210",
+            "B211",
+            "B212"
+          ],
+          "window_start": "2026-06-15",
+          "window_end": "2026-07-15"
+        },
+        "review_completed_on": "2026-07-20",
+        "acceptance_pass": true,
+        "failed_acceptance_batches": [],
+        "batches_reviewed": [
+          "B210",
+          "B211",
+          "B212"
+        ]
+      },
+      "content": "FICTIONAL TRAINING RECORD\nEffectiveness verification report | D4 | record revision 1 | issued 2026-07-20\nCustodian: user-02\n\nReview for EC-014 revision 2. Line BL-02; observation window 2026-06-15 through 2026-07-15. Reviewed batches: B210, B211, B212. Review completed 2026-07-20. Acceptance pass: TRUE. Failed acceptance batches: none. The conclusion applies only to these stated batches, line and dates."
+    },
+    "D5": {
+      "available": true,
+      "facts": {
+        "record_type": "deviation_trend",
+        "capa_id": "CAPA-2026-014",
+        "line": "BL-02",
+        "as_of": "2026-07-31",
+        "unresolved_related_deviations": 0,
+        "review_complete": true
+      },
+      "content": "FICTIONAL TRAINING RECORD\nRelated deviation status review | D5 | record revision 1 | issued 2026-07-31\nCustodian: user-02\n\nComplete related-deviation review for CAPA-2026-014, line BL-02, as of 2026-07-31. Unresolved related deviations: 0. This is a status review of registered investigations, not a substitute for the effectiveness report."
+    },
+    "D6": {
+      "available": true,
+      "facts": {
+        "record_type": "status_log",
+        "capa_id": "CAPA-2026-014",
+        "status": "closed",
+        "effective_date": "2026-07-22",
+        "as_of": "2026-07-31",
+        "register_complete": true
+      },
+      "content": "FICTIONAL TRAINING RECORD\nCurrent CAPA status register | D6 | record revision 1 | issued 2026-07-31\nCustodian: user-02\n\nComplete CAPA status register as of 2026-07-31. CAPA-2026-014 status: CLOSED, effective 2026-07-22. No later status change is recorded in this complete fictional snapshot."
+    },
+    "D7": {
+      "available": true,
+      "facts": {
+        "record_type": "training_record",
+        "capa_id": "CAPA-2026-014",
+        "procedure": {
+          "id": "SOP-BL-017",
+          "revision": 4
+        },
+        "operator_ids": [
+          "OP-17",
+          "OP-22",
+          "OP-31"
+        ],
+        "completed_on": "2026-06-14",
+        "as_of": "2026-07-31",
+        "register_complete": true
+      },
+      "content": "FICTIONAL TRAINING RECORD\nProcedure training register | D7 | record revision 1 | issued 2026-07-31\nCustodian: user-01\n\nComplete training register for CAPA-2026-014 as of 2026-07-31. Operators OP-17, OP-22, OP-31 completed SOP-BL-017 revision 4 on 2026-06-14. No additional revision training is recorded in this complete snapshot."
+    },
+    "D8": {
+      "available": true,
+      "facts": {
+        "record_type": "shift_log",
+        "line": "UT-09",
+        "shift": "day",
+        "date": "2026-07-14",
+        "notes": "Utilities housekeeping and inventory checked. No evidence on the CAPA effectiveness cohort."
+      },
+      "content": "FICTIONAL TRAINING RECORD\nUtilities shift log | D8 | record revision 1 | issued 2026-07-14\nCustodian: user-01\n\nUtilities housekeeping and inventory checked. No evidence on the CAPA effectiveness cohort."
+    }
+  },
+  "MFG-002": {
+    "D1": {
+      "available": true,
+      "facts": {
+        "record_type": "closure_summary",
+        "capa_id": "CAPA-2026-014",
+        "status": "closed",
+        "closure_date": "2026-07-22",
+        "claimed_effective": true
+      },
+      "content": "FICTIONAL TRAINING RECORD\nDeviation and CAPA closure cover sheet | D1 | record revision 1 | issued 2026-07-22\nCustodian: user-02\n\nCAPA-2026-014 is marked CLOSED on the cover sheet dated 2026-07-22. The author states that effectiveness has been demonstrated. This cover sheet does not reproduce supporting evidence; verify the underlying records."
+    },
+    "D2": {
+      "available": true,
+      "facts": {
+        "record_type": "closure_protocol",
+        "protocol_id": "EC-014",
+        "revision": 2,
+        "capa_id": "CAPA-2026-014",
+        "scope": {
+          "line": "BL-02",
+          "batch_ids": [
+            "B210",
+            "B211",
+            "B212"
+          ],
+          "window_start": "2026-06-15",
+          "window_end": "2026-07-15"
+        },
+        "required_procedure": {
+          "id": "SOP-BL-017",
+          "revision": 4
+        },
+        "required_operator_ids": [
+          "OP-17",
+          "OP-22",
+          "OP-31"
+        ],
+        "minimum_batches": 3,
+        "maximum_failed_batches": 0,
+        "maximum_unresolved_related_deviations": 0,
+        "closure_requires": [
+          "implementation_record",
+          "training_record",
+          "effectiveness_report",
+          "deviation_trend",
+          "status_log"
+        ]
+      },
+      "content": "FICTIONAL TRAINING RECORD\nApproved CAPA closure and effectiveness protocol | D2 | record revision 2 | issued 2026-06-01\nCustodian: user-02\n\nProtocol EC-014 revision 2 defines the complete local criteria for this exercise. Applicable CAPA: CAPA-2026-014. Scope: line BL-02; batches B210, B211, B212; window 2026-06-15 through 2026-07-15. The claim is assessed at the case's stated cutoff.\nClosure requires all of the following: (1) implementation completed on the specified line under SOP-BL-017 revision 4; (2) documented completion of this procedure revision by operators OP-17, OP-22, OP-31 before the cohort window; (3) an effectiveness report for this protocol revision covering the entire specified cohort, with at least 3 reviewed batches and no failed acceptance batches; (4) a complete current review with no unresolved related deviations; and (5) a complete current status register showing closed, not reopened. Record dates and completed reviews must be on or before the cutoff. A summary claim alone does not satisfy these criteria."
+    },
+    "D3": {
+      "available": true,
+      "facts": {
+        "record_type": "implementation_record",
+        "capa_id": "CAPA-2026-014",
+        "line": "BL-02",
+        "status": "completed",
+        "completed_on": "2026-06-12",
+        "procedure": {
+          "id": "SOP-BL-017",
+          "revision": 4
+        }
+      },
+      "content": "FICTIONAL TRAINING RECORD\nManufacturing implementation record | D3 | record revision 1 | issued 2026-06-12\nCustodian: user-01\n\nCAPA-2026-014: implementation status COMPLETED. Line BL-02; completed 2026-06-12. Controlled procedure SOP-BL-017 revision 4. Parameter changes and verification signatures are present in this fictional implementation record."
+    },
+    "D4": {
+      "available": true,
+      "facts": {
+        "record_type": "effectiveness_report",
+        "protocol_id": "EC-014",
+        "protocol_revision": 2,
+        "scope": {
+          "line": "BL-02",
+          "batch_ids": [
+            "B210",
+            "B211",
+            "B212"
+          ],
+          "window_start": "2026-06-15",
+          "window_end": "2026-07-15"
+        },
+        "review_completed_on": "2026-07-20",
+        "acceptance_pass": false,
+        "failed_acceptance_batches": [
+          "B212"
+        ],
+        "batches_reviewed": [
+          "B210",
+          "B211",
+          "B212"
+        ]
+      },
+      "content": "FICTIONAL TRAINING RECORD\nEffectiveness verification report | D4 | record revision 1 | issued 2026-07-20\nCustodian: user-02\n\nReview for EC-014 revision 2. Line BL-02; observation window 2026-06-15 through 2026-07-15. Reviewed batches: B210, B211, B212. Review completed 2026-07-20. Acceptance pass: FALSE. Failed acceptance batches: B212. The conclusion applies only to these stated batches, line and dates."
+    },
+    "D5": {
+      "available": true,
+      "facts": {
+        "record_type": "deviation_trend",
+        "capa_id": "CAPA-2026-014",
+        "line": "BL-02",
+        "as_of": "2026-07-31",
+        "unresolved_related_deviations": 0,
+        "review_complete": true
+      },
+      "content": "FICTIONAL TRAINING RECORD\nRelated deviation status review | D5 | record revision 1 | issued 2026-07-31\nCustodian: user-02\n\nComplete related-deviation review for CAPA-2026-014, line BL-02, as of 2026-07-31. Unresolved related deviations: 0. This is a status review of registered investigations, not a substitute for the effectiveness report."
+    },
+    "D6": {
+      "available": true,
+      "facts": {
+        "record_type": "status_log",
+        "capa_id": "CAPA-2026-014",
+        "status": "closed",
+        "effective_date": "2026-07-22",
+        "as_of": "2026-07-31",
+        "register_complete": true
+      },
+      "content": "FICTIONAL TRAINING RECORD\nCurrent CAPA status register | D6 | record revision 1 | issued 2026-07-31\nCustodian: user-02\n\nComplete CAPA status register as of 2026-07-31. CAPA-2026-014 status: CLOSED, effective 2026-07-22. No later status change is recorded in this complete fictional snapshot."
+    },
+    "D7": {
+      "available": true,
+      "facts": {
+        "record_type": "training_record",
+        "capa_id": "CAPA-2026-014",
+        "procedure": {
+          "id": "SOP-BL-017",
+          "revision": 4
+        },
+        "operator_ids": [
+          "OP-17",
+          "OP-22",
+          "OP-31"
+        ],
+        "completed_on": "2026-06-14",
+        "as_of": "2026-07-31",
+        "register_complete": true
+      },
+      "content": "FICTIONAL TRAINING RECORD\nProcedure training register | D7 | record revision 1 | issued 2026-07-31\nCustodian: user-01\n\nComplete training register for CAPA-2026-014 as of 2026-07-31. Operators OP-17, OP-22, OP-31 completed SOP-BL-017 revision 4 on 2026-06-14. No additional revision training is recorded in this complete snapshot."
+    },
+    "D8": {
+      "available": true,
+      "facts": {
+        "record_type": "shift_log",
+        "line": "UT-09",
+        "shift": "day",
+        "date": "2026-07-14",
+        "notes": "Utilities housekeeping and inventory checked. No evidence on the CAPA effectiveness cohort."
+      },
+      "content": "FICTIONAL TRAINING RECORD\nUtilities shift log | D8 | record revision 1 | issued 2026-07-14\nCustodian: user-01\n\nUtilities housekeeping and inventory checked. No evidence on the CAPA effectiveness cohort."
+    }
+  },
+  "MFG-003": {
+    "D1": {
+      "available": true,
+      "facts": {
+        "record_type": "closure_summary",
+        "capa_id": "CAPA-2026-014",
+        "status": "closed",
+        "closure_date": "2026-07-22",
+        "claimed_effective": true
+      },
+      "content": "FICTIONAL TRAINING RECORD\nDeviation and CAPA closure cover sheet | D1 | record revision 1 | issued 2026-07-22\nCustodian: user-02\n\nCAPA-2026-014 is marked CLOSED on the cover sheet dated 2026-07-22. The author states that effectiveness has been demonstrated. This cover sheet does not reproduce supporting evidence; verify the underlying records."
+    },
+    "D2": {
+      "available": true,
+      "facts": {
+        "record_type": "closure_protocol",
+        "protocol_id": "EC-014",
+        "revision": 2,
+        "capa_id": "CAPA-2026-014",
+        "scope": {
+          "line": "BL-02",
+          "batch_ids": [
+            "B210",
+            "B211",
+            "B212"
+          ],
+          "window_start": "2026-06-15",
+          "window_end": "2026-07-15"
+        },
+        "required_procedure": {
+          "id": "SOP-BL-017",
+          "revision": 4
+        },
+        "required_operator_ids": [
+          "OP-17",
+          "OP-22",
+          "OP-31"
+        ],
+        "minimum_batches": 3,
+        "maximum_failed_batches": 0,
+        "maximum_unresolved_related_deviations": 0,
+        "closure_requires": [
+          "implementation_record",
+          "training_record",
+          "effectiveness_report",
+          "deviation_trend",
+          "status_log"
+        ]
+      },
+      "content": "FICTIONAL TRAINING RECORD\nApproved CAPA closure and effectiveness protocol | D2 | record revision 2 | issued 2026-06-01\nCustodian: user-02\n\nProtocol EC-014 revision 2 defines the complete local criteria for this exercise. Applicable CAPA: CAPA-2026-014. Scope: line BL-02; batches B210, B211, B212; window 2026-06-15 through 2026-07-15. The claim is assessed at the case's stated cutoff.\nClosure requires all of the following: (1) implementation completed on the specified line under SOP-BL-017 revision 4; (2) documented completion of this procedure revision by operators OP-17, OP-22, OP-31 before the cohort window; (3) an effectiveness report for this protocol revision covering the entire specified cohort, with at least 3 reviewed batches and no failed acceptance batches; (4) a complete current review with no unresolved related deviations; and (5) a complete current status register showing closed, not reopened. Record dates and completed reviews must be on or before the cutoff. A summary claim alone does not satisfy these criteria."
+    },
+    "D3": {
+      "available": true,
+      "facts": {
+        "record_type": "implementation_record",
+        "capa_id": "CAPA-2026-014",
+        "line": "BL-02",
+        "status": "completed",
+        "completed_on": "2026-06-12",
+        "procedure": {
+          "id": "SOP-BL-017",
+          "revision": 4
+        }
+      },
+      "content": "FICTIONAL TRAINING RECORD\nManufacturing implementation record | D3 | record revision 1 | issued 2026-06-12\nCustodian: user-01\n\nCAPA-2026-014: implementation status COMPLETED. Line BL-02; completed 2026-06-12. Controlled procedure SOP-BL-017 revision 4. Parameter changes and verification signatures are present in this fictional implementation record."
+    },
+    "D4": {
+      "available": false,
+      "unavailable_reason": "No completed effectiveness verification report is present in this packet as of the review cutoff. The custodian cannot provide one. This response does not prove that no activity occurred outside this packet."
+    },
+    "D5": {
+      "available": true,
+      "facts": {
+        "record_type": "deviation_trend",
+        "capa_id": "CAPA-2026-014",
+        "line": "BL-02",
+        "as_of": "2026-07-31",
+        "unresolved_related_deviations": 0,
+        "review_complete": true
+      },
+      "content": "FICTIONAL TRAINING RECORD\nRelated deviation status review | D5 | record revision 1 | issued 2026-07-31\nCustodian: user-02\n\nComplete related-deviation review for CAPA-2026-014, line BL-02, as of 2026-07-31. Unresolved related deviations: 0. This is a status review of registered investigations, not a substitute for the effectiveness report."
+    },
+    "D6": {
+      "available": true,
+      "facts": {
+        "record_type": "status_log",
+        "capa_id": "CAPA-2026-014",
+        "status": "closed",
+        "effective_date": "2026-07-22",
+        "as_of": "2026-07-31",
+        "register_complete": true
+      },
+      "content": "FICTIONAL TRAINING RECORD\nCurrent CAPA status register | D6 | record revision 1 | issued 2026-07-31\nCustodian: user-02\n\nComplete CAPA status register as of 2026-07-31. CAPA-2026-014 status: CLOSED, effective 2026-07-22. No later status change is recorded in this complete fictional snapshot."
+    },
+    "D7": {
+      "available": true,
+      "facts": {
+        "record_type": "training_record",
+        "capa_id": "CAPA-2026-014",
+        "procedure": {
+          "id": "SOP-BL-017",
+          "revision": 4
+        },
+        "operator_ids": [
+          "OP-17",
+          "OP-22",
+          "OP-31"
+        ],
+        "completed_on": "2026-06-14",
+        "as_of": "2026-07-31",
+        "register_complete": true
+      },
+      "content": "FICTIONAL TRAINING RECORD\nProcedure training register | D7 | record revision 1 | issued 2026-07-31\nCustodian: user-01\n\nComplete training register for CAPA-2026-014 as of 2026-07-31. Operators OP-17, OP-22, OP-31 completed SOP-BL-017 revision 4 on 2026-06-14. No additional revision training is recorded in this complete snapshot."
+    },
+    "D8": {
+      "available": true,
+      "facts": {
+        "record_type": "shift_log",
+        "line": "UT-09",
+        "shift": "day",
+        "date": "2026-07-14",
+        "notes": "Utilities housekeeping and inventory checked. No evidence on the CAPA effectiveness cohort."
+      },
+      "content": "FICTIONAL TRAINING RECORD\nUtilities shift log | D8 | record revision 1 | issued 2026-07-14\nCustodian: user-01\n\nUtilities housekeeping and inventory checked. No evidence on the CAPA effectiveness cohort."
+    }
+  },
+  "MFG-004": {
+    "D1": {
+      "available": true,
+      "facts": {
+        "record_type": "closure_summary",
+        "capa_id": "CAPA-2026-014",
+        "status": "closed",
+        "closure_date": "2026-07-22",
+        "claimed_effective": true
+      },
+      "content": "FICTIONAL TRAINING RECORD\nDeviation and CAPA closure cover sheet | D1 | record revision 1 | issued 2026-07-22\nCustodian: user-02\n\nCAPA-2026-014 is marked CLOSED on the cover sheet dated 2026-07-22. The author states that effectiveness has been demonstrated. This cover sheet does not reproduce supporting evidence; verify the underlying records."
+    },
+    "D2": {
+      "available": true,
+      "facts": {
+        "record_type": "closure_protocol",
+        "protocol_id": "EC-014",
+        "revision": 2,
+        "capa_id": "CAPA-2026-014",
+        "scope": {
+          "line": "BL-02",
+          "batch_ids": [
+            "B210",
+            "B211",
+            "B212"
+          ],
+          "window_start": "2026-06-15",
+          "window_end": "2026-07-15"
+        },
+        "required_procedure": {
+          "id": "SOP-BL-017",
+          "revision": 4
+        },
+        "required_operator_ids": [
+          "OP-17",
+          "OP-22",
+          "OP-31"
+        ],
+        "minimum_batches": 3,
+        "maximum_failed_batches": 0,
+        "maximum_unresolved_related_deviations": 0,
+        "closure_requires": [
+          "implementation_record",
+          "training_record",
+          "effectiveness_report",
+          "deviation_trend",
+          "status_log"
+        ]
+      },
+      "content": "FICTIONAL TRAINING RECORD\nApproved CAPA closure and effectiveness protocol | D2 | record revision 2 | issued 2026-06-01\nCustodian: user-02\n\nProtocol EC-014 revision 2 defines the complete local criteria for this exercise. Applicable CAPA: CAPA-2026-014. Scope: line BL-02; batches B210, B211, B212; window 2026-06-15 through 2026-07-15. The claim is assessed at the case's stated cutoff.\nClosure requires all of the following: (1) implementation completed on the specified line under SOP-BL-017 revision 4; (2) documented completion of this procedure revision by operators OP-17, OP-22, OP-31 before the cohort window; (3) an effectiveness report for this protocol revision covering the entire specified cohort, with at least 3 reviewed batches and no failed acceptance batches; (4) a complete current review with no unresolved related deviations; and (5) a complete current status register showing closed, not reopened. Record dates and completed reviews must be on or before the cutoff. A summary claim alone does not satisfy these criteria."
+    },
+    "D3": {
+      "available": true,
+      "facts": {
+        "record_type": "implementation_record",
+        "capa_id": "CAPA-2026-014",
+        "line": "BL-02",
+        "status": "completed",
+        "completed_on": "2026-06-12",
+        "procedure": {
+          "id": "SOP-BL-017",
+          "revision": 4
+        }
+      },
+      "content": "FICTIONAL TRAINING RECORD\nManufacturing implementation record | D3 | record revision 1 | issued 2026-06-12\nCustodian: user-01\n\nCAPA-2026-014: implementation status COMPLETED. Line BL-02; completed 2026-06-12. Controlled procedure SOP-BL-017 revision 4. Parameter changes and verification signatures are present in this fictional implementation record."
+    },
+    "D4": {
+      "available": true,
+      "facts": {
+        "record_type": "effectiveness_report",
+        "protocol_id": "EC-014",
+        "protocol_revision": 2,
+        "scope": {
+          "line": "BL-03",
+          "batch_ids": [
+            "B310",
+            "B311",
+            "B312"
+          ],
+          "window_start": "2026-06-15",
+          "window_end": "2026-07-15"
+        },
+        "review_completed_on": "2026-07-20",
+        "acceptance_pass": true,
+        "failed_acceptance_batches": [],
+        "batches_reviewed": [
+          "B310",
+          "B311",
+          "B312"
+        ]
+      },
+      "content": "FICTIONAL TRAINING RECORD\nEffectiveness verification report | D4 | record revision 1 | issued 2026-07-20\nCustodian: user-02\n\nReview for EC-014 revision 2. Line BL-03; observation window 2026-06-15 through 2026-07-15. Reviewed batches: B310, B311, B312. Review completed 2026-07-20. Acceptance pass: TRUE. Failed acceptance batches: none. The conclusion applies only to these stated batches, line and dates."
+    },
+    "D5": {
+      "available": true,
+      "facts": {
+        "record_type": "deviation_trend",
+        "capa_id": "CAPA-2026-014",
+        "line": "BL-02",
+        "as_of": "2026-07-31",
+        "unresolved_related_deviations": 0,
+        "review_complete": true
+      },
+      "content": "FICTIONAL TRAINING RECORD\nRelated deviation status review | D5 | record revision 1 | issued 2026-07-31\nCustodian: user-02\n\nComplete related-deviation review for CAPA-2026-014, line BL-02, as of 2026-07-31. Unresolved related deviations: 0. This is a status review of registered investigations, not a substitute for the effectiveness report."
+    },
+    "D6": {
+      "available": true,
+      "facts": {
+        "record_type": "status_log",
+        "capa_id": "CAPA-2026-014",
+        "status": "closed",
+        "effective_date": "2026-07-22",
+        "as_of": "2026-07-31",
+        "register_complete": true
+      },
+      "content": "FICTIONAL TRAINING RECORD\nCurrent CAPA status register | D6 | record revision 1 | issued 2026-07-31\nCustodian: user-02\n\nComplete CAPA status register as of 2026-07-31. CAPA-2026-014 status: CLOSED, effective 2026-07-22. No later status change is recorded in this complete fictional snapshot."
+    },
+    "D7": {
+      "available": true,
+      "facts": {
+        "record_type": "training_record",
+        "capa_id": "CAPA-2026-014",
+        "procedure": {
+          "id": "SOP-BL-017",
+          "revision": 4
+        },
+        "operator_ids": [
+          "OP-17",
+          "OP-22",
+          "OP-31"
+        ],
+        "completed_on": "2026-06-14",
+        "as_of": "2026-07-31",
+        "register_complete": true
+      },
+      "content": "FICTIONAL TRAINING RECORD\nProcedure training register | D7 | record revision 1 | issued 2026-07-31\nCustodian: user-01\n\nComplete training register for CAPA-2026-014 as of 2026-07-31. Operators OP-17, OP-22, OP-31 completed SOP-BL-017 revision 4 on 2026-06-14. No additional revision training is recorded in this complete snapshot."
+    },
+    "D8": {
+      "available": true,
+      "facts": {
+        "record_type": "shift_log",
+        "line": "UT-09",
+        "shift": "day",
+        "date": "2026-07-14",
+        "notes": "Utilities housekeeping and inventory checked. No evidence on the CAPA effectiveness cohort."
+      },
+      "content": "FICTIONAL TRAINING RECORD\nUtilities shift log | D8 | record revision 1 | issued 2026-07-14\nCustodian: user-01\n\nUtilities housekeeping and inventory checked. No evidence on the CAPA effectiveness cohort."
+    }
+  },
+  "MFG-005": {
+    "D1": {
+      "available": true,
+      "facts": {
+        "record_type": "closure_summary",
+        "capa_id": "CAPA-2026-028",
+        "status": "closed",
+        "closure_date": "2026-08-22",
+        "claimed_effective": true
+      },
+      "content": "FICTIONAL TRAINING RECORD\nDeviation and CAPA closure cover sheet | D1 | record revision 1 | issued 2026-08-22\nCustodian: user-02\n\nCAPA-2026-028 is marked CLOSED on the cover sheet dated 2026-08-22. The author states that effectiveness has been demonstrated. This cover sheet does not reproduce supporting evidence; verify the underlying records."
+    },
+    "D2": {
+      "available": true,
+      "facts": {
+        "record_type": "closure_protocol",
+        "protocol_id": "EC-028",
+        "revision": 2,
+        "capa_id": "CAPA-2026-028",
+        "scope": {
+          "line": "PK-04",
+          "batch_ids": [
+            "P810",
+            "P811",
+            "P812"
+          ],
+          "window_start": "2026-07-15",
+          "window_end": "2026-08-15"
+        },
+        "required_procedure": {
+          "id": "SOP-PK-112",
+          "revision": 6
+        },
+        "required_operator_ids": [
+          "OP-41",
+          "OP-44",
+          "OP-48"
+        ],
+        "minimum_batches": 3,
+        "maximum_failed_batches": 0,
+        "maximum_unresolved_related_deviations": 0,
+        "closure_requires": [
+          "implementation_record",
+          "training_record",
+          "effectiveness_report",
+          "deviation_trend",
+          "status_log"
+        ]
+      },
+      "content": "FICTIONAL TRAINING RECORD\nApproved CAPA closure and effectiveness protocol | D2 | record revision 2 | issued 2026-07-01\nCustodian: user-02\n\nProtocol EC-028 revision 2 defines the complete local criteria for this exercise. Applicable CAPA: CAPA-2026-028. Scope: line PK-04; batches P810, P811, P812; window 2026-07-15 through 2026-08-15. The claim is assessed at the case's stated cutoff.\nClosure requires all of the following: (1) implementation completed on the specified line under SOP-PK-112 revision 6; (2) documented completion of this procedure revision by operators OP-41, OP-44, OP-48 before the cohort window; (3) an effectiveness report for this protocol revision covering the entire specified cohort, with at least 3 reviewed batches and no failed acceptance batches; (4) a complete current review with no unresolved related deviations; and (5) a complete current status register showing closed, not reopened. Record dates and completed reviews must be on or before the cutoff. A summary claim alone does not satisfy these criteria."
+    },
+    "D3": {
+      "available": true,
+      "facts": {
+        "record_type": "implementation_record",
+        "capa_id": "CAPA-2026-028",
+        "line": "PK-04",
+        "status": "completed",
+        "completed_on": "2026-07-12",
+        "procedure": {
+          "id": "SOP-PK-112",
+          "revision": 6
+        }
+      },
+      "content": "FICTIONAL TRAINING RECORD\nManufacturing implementation record | D3 | record revision 1 | issued 2026-07-12\nCustodian: user-01\n\nCAPA-2026-028: implementation status COMPLETED. Line PK-04; completed 2026-07-12. Controlled procedure SOP-PK-112 revision 6. Parameter changes and verification signatures are present in this fictional implementation record."
+    },
+    "D4": {
+      "available": true,
+      "facts": {
+        "record_type": "effectiveness_report",
+        "protocol_id": "EC-028",
+        "protocol_revision": 2,
+        "scope": {
+          "line": "PK-04",
+          "batch_ids": [
+            "P810",
+            "P811",
+            "P812"
+          ],
+          "window_start": "2026-07-15",
+          "window_end": "2026-08-15"
+        },
+        "review_completed_on": "2026-08-20",
+        "acceptance_pass": true,
+        "failed_acceptance_batches": [],
+        "batches_reviewed": [
+          "P810",
+          "P811",
+          "P812"
+        ]
+      },
+      "content": "FICTIONAL TRAINING RECORD\nEffectiveness verification report | D4 | record revision 1 | issued 2026-08-20\nCustodian: user-02\n\nReview for EC-028 revision 2. Line PK-04; observation window 2026-07-15 through 2026-08-15. Reviewed batches: P810, P811, P812. Review completed 2026-08-20. Acceptance pass: TRUE. Failed acceptance batches: none. The conclusion applies only to these stated batches, line and dates."
+    },
+    "D5": {
+      "available": true,
+      "facts": {
+        "record_type": "deviation_trend",
+        "capa_id": "CAPA-2026-028",
+        "line": "PK-04",
+        "as_of": "2026-08-31",
+        "unresolved_related_deviations": 0,
+        "review_complete": true
+      },
+      "content": "FICTIONAL TRAINING RECORD\nRelated deviation status review | D5 | record revision 1 | issued 2026-08-31\nCustodian: user-02\n\nComplete related-deviation review for CAPA-2026-028, line PK-04, as of 2026-08-31. Unresolved related deviations: 0. This is a status review of registered investigations, not a substitute for the effectiveness report."
+    },
+    "D6": {
+      "available": true,
+      "facts": {
+        "record_type": "status_log",
+        "capa_id": "CAPA-2026-028",
+        "status": "closed",
+        "effective_date": "2026-08-22",
+        "as_of": "2026-08-31",
+        "register_complete": true
+      },
+      "content": "FICTIONAL TRAINING RECORD\nCurrent CAPA status register | D6 | record revision 1 | issued 2026-08-31\nCustodian: user-02\n\nComplete CAPA status register as of 2026-08-31. CAPA-2026-028 status: CLOSED, effective 2026-08-22. No later status change is recorded in this complete fictional snapshot."
+    },
+    "D7": {
+      "available": true,
+      "facts": {
+        "record_type": "training_record",
+        "capa_id": "CAPA-2026-028",
+        "procedure": {
+          "id": "SOP-PK-112",
+          "revision": 6
+        },
+        "operator_ids": [
+          "OP-41",
+          "OP-44",
+          "OP-48"
+        ],
+        "completed_on": "2026-07-14",
+        "as_of": "2026-08-31",
+        "register_complete": true
+      },
+      "content": "FICTIONAL TRAINING RECORD\nProcedure training register | D7 | record revision 1 | issued 2026-08-31\nCustodian: user-01\n\nComplete training register for CAPA-2026-028 as of 2026-08-31. Operators OP-41, OP-44, OP-48 completed SOP-PK-112 revision 6 on 2026-07-14. No additional revision training is recorded in this complete snapshot."
+    },
+    "D8": {
+      "available": true,
+      "facts": {
+        "record_type": "shift_log",
+        "line": "UT-09",
+        "shift": "day",
+        "date": "2026-08-14",
+        "notes": "Utilities housekeeping and inventory checked. No evidence on the CAPA effectiveness cohort."
+      },
+      "content": "FICTIONAL TRAINING RECORD\nUtilities shift log | D8 | record revision 1 | issued 2026-08-14\nCustodian: user-01\n\nUtilities housekeeping and inventory checked. No evidence on the CAPA effectiveness cohort."
+    }
+  },
+  "MFG-006": {
+    "D1": {
+      "available": true,
+      "facts": {
+        "record_type": "closure_summary",
+        "capa_id": "CAPA-2026-028",
+        "status": "closed",
+        "closure_date": "2026-08-22",
+        "claimed_effective": true
+      },
+      "content": "FICTIONAL TRAINING RECORD\nDeviation and CAPA closure cover sheet | D1 | record revision 1 | issued 2026-08-22\nCustodian: user-02\n\nCAPA-2026-028 is marked CLOSED on the cover sheet dated 2026-08-22. The author states that effectiveness has been demonstrated. This cover sheet does not reproduce supporting evidence; verify the underlying records."
+    },
+    "D2": {
+      "available": true,
+      "facts": {
+        "record_type": "closure_protocol",
+        "protocol_id": "EC-028",
+        "revision": 2,
+        "capa_id": "CAPA-2026-028",
+        "scope": {
+          "line": "PK-04",
+          "batch_ids": [
+            "P810",
+            "P811",
+            "P812"
+          ],
+          "window_start": "2026-07-15",
+          "window_end": "2026-08-15"
+        },
+        "required_procedure": {
+          "id": "SOP-PK-112",
+          "revision": 6
+        },
+        "required_operator_ids": [
+          "OP-41",
+          "OP-44",
+          "OP-48"
+        ],
+        "minimum_batches": 3,
+        "maximum_failed_batches": 0,
+        "maximum_unresolved_related_deviations": 0,
+        "closure_requires": [
+          "implementation_record",
+          "training_record",
+          "effectiveness_report",
+          "deviation_trend",
+          "status_log"
+        ]
+      },
+      "content": "FICTIONAL TRAINING RECORD\nApproved CAPA closure and effectiveness protocol | D2 | record revision 2 | issued 2026-07-01\nCustodian: user-02\n\nProtocol EC-028 revision 2 defines the complete local criteria for this exercise. Applicable CAPA: CAPA-2026-028. Scope: line PK-04; batches P810, P811, P812; window 2026-07-15 through 2026-08-15. The claim is assessed at the case's stated cutoff.\nClosure requires all of the following: (1) implementation completed on the specified line under SOP-PK-112 revision 6; (2) documented completion of this procedure revision by operators OP-41, OP-44, OP-48 before the cohort window; (3) an effectiveness report for this protocol revision covering the entire specified cohort, with at least 3 reviewed batches and no failed acceptance batches; (4) a complete current review with no unresolved related deviations; and (5) a complete current status register showing closed, not reopened. Record dates and completed reviews must be on or before the cutoff. A summary claim alone does not satisfy these criteria."
+    },
+    "D3": {
+      "available": true,
+      "facts": {
+        "record_type": "implementation_record",
+        "capa_id": "CAPA-2026-028",
+        "line": "PK-04",
+        "status": "completed",
+        "completed_on": "2026-07-12",
+        "procedure": {
+          "id": "SOP-PK-112",
+          "revision": 6
+        }
+      },
+      "content": "FICTIONAL TRAINING RECORD\nManufacturing implementation record | D3 | record revision 1 | issued 2026-07-12\nCustodian: user-01\n\nCAPA-2026-028: implementation status COMPLETED. Line PK-04; completed 2026-07-12. Controlled procedure SOP-PK-112 revision 6. Parameter changes and verification signatures are present in this fictional implementation record."
+    },
+    "D4": {
+      "available": true,
+      "facts": {
+        "record_type": "effectiveness_report",
+        "protocol_id": "EC-028",
+        "protocol_revision": 2,
+        "scope": {
+          "line": "PK-04",
+          "batch_ids": [
+            "P810",
+            "P811",
+            "P812"
+          ],
+          "window_start": "2026-07-15",
+          "window_end": "2026-08-15"
+        },
+        "review_completed_on": "2026-08-20",
+        "acceptance_pass": true,
+        "failed_acceptance_batches": [],
+        "batches_reviewed": [
+          "P810",
+          "P811",
+          "P812"
+        ]
+      },
+      "content": "FICTIONAL TRAINING RECORD\nEffectiveness verification report | D4 | record revision 1 | issued 2026-08-20\nCustodian: user-02\n\nReview for EC-028 revision 2. Line PK-04; observation window 2026-07-15 through 2026-08-15. Reviewed batches: P810, P811, P812. Review completed 2026-08-20. Acceptance pass: TRUE. Failed acceptance batches: none. The conclusion applies only to these stated batches, line and dates."
+    },
+    "D5": {
+      "available": true,
+      "facts": {
+        "record_type": "deviation_trend",
+        "capa_id": "CAPA-2026-028",
+        "line": "PK-04",
+        "as_of": "2026-08-31",
+        "unresolved_related_deviations": 0,
+        "review_complete": true
+      },
+      "content": "FICTIONAL TRAINING RECORD\nRelated deviation status review | D5 | record revision 1 | issued 2026-08-31\nCustodian: user-02\n\nComplete related-deviation review for CAPA-2026-028, line PK-04, as of 2026-08-31. Unresolved related deviations: 0. This is a status review of registered investigations, not a substitute for the effectiveness report."
+    },
+    "D6": {
+      "available": true,
+      "facts": {
+        "record_type": "status_log",
+        "capa_id": "CAPA-2026-028",
+        "status": "closed",
+        "effective_date": "2026-08-22",
+        "as_of": "2026-08-31",
+        "register_complete": true
+      },
+      "content": "FICTIONAL TRAINING RECORD\nCurrent CAPA status register | D6 | record revision 1 | issued 2026-08-31\nCustodian: user-02\n\nComplete CAPA status register as of 2026-08-31. CAPA-2026-028 status: CLOSED, effective 2026-08-22. No later status change is recorded in this complete fictional snapshot."
+    },
+    "D7": {
+      "available": true,
+      "facts": {
+        "record_type": "training_record",
+        "capa_id": "CAPA-2026-028",
+        "procedure": {
+          "id": "SOP-PK-112",
+          "revision": 5
+        },
+        "operator_ids": [
+          "OP-41",
+          "OP-44",
+          "OP-48"
+        ],
+        "completed_on": "2026-07-14",
+        "as_of": "2026-08-31",
+        "register_complete": true
+      },
+      "content": "FICTIONAL TRAINING RECORD\nProcedure training register | D7 | record revision 1 | issued 2026-08-31\nCustodian: user-01\n\nComplete training register for CAPA-2026-028 as of 2026-08-31. Operators OP-41, OP-44, OP-48 completed SOP-PK-112 revision 5 on 2026-07-14. No additional revision training is recorded in this complete snapshot."
+    },
+    "D8": {
+      "available": true,
+      "facts": {
+        "record_type": "shift_log",
+        "line": "UT-09",
+        "shift": "day",
+        "date": "2026-08-14",
+        "notes": "Utilities housekeeping and inventory checked. No evidence on the CAPA effectiveness cohort."
+      },
+      "content": "FICTIONAL TRAINING RECORD\nUtilities shift log | D8 | record revision 1 | issued 2026-08-14\nCustodian: user-01\n\nUtilities housekeeping and inventory checked. No evidence on the CAPA effectiveness cohort."
+    }
+  },
+  "MFG-007": {
+    "D1": {
+      "available": true,
+      "facts": {
+        "record_type": "closure_summary",
+        "capa_id": "CAPA-2026-028",
+        "status": "closed",
+        "closure_date": "2026-08-22",
+        "claimed_effective": true
+      },
+      "content": "FICTIONAL TRAINING RECORD\nDeviation and CAPA closure cover sheet | D1 | record revision 1 | issued 2026-08-22\nCustodian: user-02\n\nCAPA-2026-028 is marked CLOSED on the cover sheet dated 2026-08-22. The author states that effectiveness has been demonstrated. This cover sheet does not reproduce supporting evidence; verify the underlying records."
+    },
+    "D2": {
+      "available": true,
+      "facts": {
+        "record_type": "closure_protocol",
+        "protocol_id": "EC-028",
+        "revision": 2,
+        "capa_id": "CAPA-2026-028",
+        "scope": {
+          "line": "PK-04",
+          "batch_ids": [
+            "P810",
+            "P811",
+            "P812"
+          ],
+          "window_start": "2026-07-15",
+          "window_end": "2026-08-15"
+        },
+        "required_procedure": {
+          "id": "SOP-PK-112",
+          "revision": 6
+        },
+        "required_operator_ids": [
+          "OP-41",
+          "OP-44",
+          "OP-48"
+        ],
+        "minimum_batches": 3,
+        "maximum_failed_batches": 0,
+        "maximum_unresolved_related_deviations": 0,
+        "closure_requires": [
+          "implementation_record",
+          "training_record",
+          "effectiveness_report",
+          "deviation_trend",
+          "status_log"
+        ]
+      },
+      "content": "FICTIONAL TRAINING RECORD\nApproved CAPA closure and effectiveness protocol | D2 | record revision 2 | issued 2026-07-01\nCustodian: user-02\n\nProtocol EC-028 revision 2 defines the complete local criteria for this exercise. Applicable CAPA: CAPA-2026-028. Scope: line PK-04; batches P810, P811, P812; window 2026-07-15 through 2026-08-15. The claim is assessed at the case's stated cutoff.\nClosure requires all of the following: (1) implementation completed on the specified line under SOP-PK-112 revision 6; (2) documented completion of this procedure revision by operators OP-41, OP-44, OP-48 before the cohort window; (3) an effectiveness report for this protocol revision covering the entire specified cohort, with at least 3 reviewed batches and no failed acceptance batches; (4) a complete current review with no unresolved related deviations; and (5) a complete current status register showing closed, not reopened. Record dates and completed reviews must be on or before the cutoff. A summary claim alone does not satisfy these criteria."
+    },
+    "D3": {
+      "available": true,
+      "facts": {
+        "record_type": "implementation_record",
+        "capa_id": "CAPA-2026-028",
+        "line": "PK-04",
+        "status": "completed",
+        "completed_on": "2026-07-12",
+        "procedure": {
+          "id": "SOP-PK-112",
+          "revision": 6
+        }
+      },
+      "content": "FICTIONAL TRAINING RECORD\nManufacturing implementation record | D3 | record revision 1 | issued 2026-07-12\nCustodian: user-01\n\nCAPA-2026-028: implementation status COMPLETED. Line PK-04; completed 2026-07-12. Controlled procedure SOP-PK-112 revision 6. Parameter changes and verification signatures are present in this fictional implementation record."
+    },
+    "D4": {
+      "available": true,
+      "facts": {
+        "record_type": "effectiveness_report",
+        "protocol_id": "EC-028",
+        "protocol_revision": 2,
+        "scope": {
+          "line": "PK-04",
+          "batch_ids": [
+            "P810",
+            "P811",
+            "P812"
+          ],
+          "window_start": "2026-07-15",
+          "window_end": "2026-08-15"
+        },
+        "review_completed_on": "2026-08-20",
+        "acceptance_pass": true,
+        "failed_acceptance_batches": [],
+        "batches_reviewed": [
+          "P810",
+          "P811",
+          "P812"
+        ]
+      },
+      "content": "FICTIONAL TRAINING RECORD\nEffectiveness verification report | D4 | record revision 1 | issued 2026-08-20\nCustodian: user-02\n\nReview for EC-028 revision 2. Line PK-04; observation window 2026-07-15 through 2026-08-15. Reviewed batches: P810, P811, P812. Review completed 2026-08-20. Acceptance pass: TRUE. Failed acceptance batches: none. The conclusion applies only to these stated batches, line and dates."
+    },
+    "D5": {
+      "available": true,
+      "facts": {
+        "record_type": "deviation_trend",
+        "capa_id": "CAPA-2026-028",
+        "line": "PK-04",
+        "as_of": "2026-08-31",
+        "unresolved_related_deviations": 0,
+        "review_complete": true
+      },
+      "content": "FICTIONAL TRAINING RECORD\nRelated deviation status review | D5 | record revision 1 | issued 2026-08-31\nCustodian: user-02\n\nComplete related-deviation review for CAPA-2026-028, line PK-04, as of 2026-08-31. Unresolved related deviations: 0. This is a status review of registered investigations, not a substitute for the effectiveness report."
+    },
+    "D6": {
+      "available": true,
+      "facts": {
+        "record_type": "status_log",
+        "capa_id": "CAPA-2026-028",
+        "status": "reopened",
+        "effective_date": "2026-08-29",
+        "as_of": "2026-08-31",
+        "register_complete": true
+      },
+      "content": "FICTIONAL TRAINING RECORD\nCurrent CAPA status register | D6 | record revision 1 | issued 2026-08-31\nCustodian: user-02\n\nComplete CAPA status register as of 2026-08-31. CAPA-2026-028 status: REOPENED, effective 2026-08-29. The CAPA was reopened after additional review; the earlier closure cover sheet remains in the packet as history."
+    },
+    "D7": {
+      "available": true,
+      "facts": {
+        "record_type": "training_record",
+        "capa_id": "CAPA-2026-028",
+        "procedure": {
+          "id": "SOP-PK-112",
+          "revision": 6
+        },
+        "operator_ids": [
+          "OP-41",
+          "OP-44",
+          "OP-48"
+        ],
+        "completed_on": "2026-07-14",
+        "as_of": "2026-08-31",
+        "register_complete": true
+      },
+      "content": "FICTIONAL TRAINING RECORD\nProcedure training register | D7 | record revision 1 | issued 2026-08-31\nCustodian: user-01\n\nComplete training register for CAPA-2026-028 as of 2026-08-31. Operators OP-41, OP-44, OP-48 completed SOP-PK-112 revision 6 on 2026-07-14. No additional revision training is recorded in this complete snapshot."
+    },
+    "D8": {
+      "available": true,
+      "facts": {
+        "record_type": "shift_log",
+        "line": "UT-09",
+        "shift": "day",
+        "date": "2026-08-14",
+        "notes": "Utilities housekeeping and inventory checked. No evidence on the CAPA effectiveness cohort."
+      },
+      "content": "FICTIONAL TRAINING RECORD\nUtilities shift log | D8 | record revision 1 | issued 2026-08-14\nCustodian: user-01\n\nUtilities housekeeping and inventory checked. No evidence on the CAPA effectiveness cohort."
+    }
+  },
+  "MFG-008": {
+    "D1": {
+      "available": true,
+      "facts": {
+        "record_type": "closure_summary",
+        "capa_id": "CAPA-2026-028",
+        "status": "closed",
+        "closure_date": "2026-08-22",
+        "claimed_effective": true
+      },
+      "content": "FICTIONAL TRAINING RECORD\nDeviation and CAPA closure cover sheet | D1 | record revision 1 | issued 2026-08-22\nCustodian: user-02\n\nCAPA-2026-028 is marked CLOSED on the cover sheet dated 2026-08-22. The author states that effectiveness has been demonstrated. This cover sheet does not reproduce supporting evidence; verify the underlying records."
+    },
+    "D2": {
+      "available": true,
+      "facts": {
+        "record_type": "closure_protocol",
+        "protocol_id": "EC-028",
+        "revision": 2,
+        "capa_id": "CAPA-2026-028",
+        "scope": {
+          "line": "PK-04",
+          "batch_ids": [
+            "P810",
+            "P811",
+            "P812"
+          ],
+          "window_start": "2026-07-15",
+          "window_end": "2026-08-15"
+        },
+        "required_procedure": {
+          "id": "SOP-PK-112",
+          "revision": 6
+        },
+        "required_operator_ids": [
+          "OP-41",
+          "OP-44",
+          "OP-48"
+        ],
+        "minimum_batches": 3,
+        "maximum_failed_batches": 0,
+        "maximum_unresolved_related_deviations": 0,
+        "closure_requires": [
+          "implementation_record",
+          "training_record",
+          "effectiveness_report",
+          "deviation_trend",
+          "status_log"
+        ]
+      },
+      "content": "FICTIONAL TRAINING RECORD\nApproved CAPA closure and effectiveness protocol | D2 | record revision 2 | issued 2026-07-01\nCustodian: user-02\n\nProtocol EC-028 revision 2 defines the complete local criteria for this exercise. Applicable CAPA: CAPA-2026-028. Scope: line PK-04; batches P810, P811, P812; window 2026-07-15 through 2026-08-15. The claim is assessed at the case's stated cutoff.\nClosure requires all of the following: (1) implementation completed on the specified line under SOP-PK-112 revision 6; (2) documented completion of this procedure revision by operators OP-41, OP-44, OP-48 before the cohort window; (3) an effectiveness report for this protocol revision covering the entire specified cohort, with at least 3 reviewed batches and no failed acceptance batches; (4) a complete current review with no unresolved related deviations; and (5) a complete current status register showing closed, not reopened. Record dates and completed reviews must be on or before the cutoff. A summary claim alone does not satisfy these criteria."
+    },
+    "D3": {
+      "available": true,
+      "facts": {
+        "record_type": "implementation_record",
+        "capa_id": "CAPA-2026-028",
+        "line": "PK-04",
+        "status": "completed",
+        "completed_on": "2026-07-12",
+        "procedure": {
+          "id": "SOP-PK-112",
+          "revision": 6
+        }
+      },
+      "content": "FICTIONAL TRAINING RECORD\nManufacturing implementation record | D3 | record revision 1 | issued 2026-07-12\nCustodian: user-01\n\nCAPA-2026-028: implementation status COMPLETED. Line PK-04; completed 2026-07-12. Controlled procedure SOP-PK-112 revision 6. Parameter changes and verification signatures are present in this fictional implementation record."
+    },
+    "D4": {
+      "available": true,
+      "facts": {
+        "record_type": "effectiveness_report",
+        "protocol_id": "EC-028",
+        "protocol_revision": 2,
+        "scope": {
+          "line": "PK-04",
+          "batch_ids": [
+            "P810",
+            "P811",
+            "P812"
+          ],
+          "window_start": "2026-07-15",
+          "window_end": "2026-08-15"
+        },
+        "review_completed_on": "2026-09-05",
+        "acceptance_pass": true,
+        "failed_acceptance_batches": [],
+        "batches_reviewed": [
+          "P810",
+          "P811",
+          "P812"
+        ]
+      },
+      "content": "FICTIONAL TRAINING RECORD\nEffectiveness verification report | D4 | record revision 1 | issued 2026-09-05\nCustodian: user-02\n\nReview for EC-028 revision 2. Line PK-04; observation window 2026-07-15 through 2026-08-15. Reviewed batches: P810, P811, P812. Review completed 2026-09-05. Acceptance pass: TRUE. Failed acceptance batches: none. The conclusion applies only to these stated batches, line and dates."
+    },
+    "D5": {
+      "available": true,
+      "facts": {
+        "record_type": "deviation_trend",
+        "capa_id": "CAPA-2026-028",
+        "line": "PK-04",
+        "as_of": "2026-08-31",
+        "unresolved_related_deviations": 0,
+        "review_complete": true
+      },
+      "content": "FICTIONAL TRAINING RECORD\nRelated deviation status review | D5 | record revision 1 | issued 2026-08-31\nCustodian: user-02\n\nComplete related-deviation review for CAPA-2026-028, line PK-04, as of 2026-08-31. Unresolved related deviations: 0. This is a status review of registered investigations, not a substitute for the effectiveness report."
+    },
+    "D6": {
+      "available": true,
+      "facts": {
+        "record_type": "status_log",
+        "capa_id": "CAPA-2026-028",
+        "status": "closed",
+        "effective_date": "2026-08-22",
+        "as_of": "2026-08-31",
+        "register_complete": true
+      },
+      "content": "FICTIONAL TRAINING RECORD\nCurrent CAPA status register | D6 | record revision 1 | issued 2026-08-31\nCustodian: user-02\n\nComplete CAPA status register as of 2026-08-31. CAPA-2026-028 status: CLOSED, effective 2026-08-22. No later status change is recorded in this complete fictional snapshot."
+    },
+    "D7": {
+      "available": true,
+      "facts": {
+        "record_type": "training_record",
+        "capa_id": "CAPA-2026-028",
+        "procedure": {
+          "id": "SOP-PK-112",
+          "revision": 6
+        },
+        "operator_ids": [
+          "OP-41",
+          "OP-44",
+          "OP-48"
+        ],
+        "completed_on": "2026-07-14",
+        "as_of": "2026-08-31",
+        "register_complete": true
+      },
+      "content": "FICTIONAL TRAINING RECORD\nProcedure training register | D7 | record revision 1 | issued 2026-08-31\nCustodian: user-01\n\nComplete training register for CAPA-2026-028 as of 2026-08-31. Operators OP-41, OP-44, OP-48 completed SOP-PK-112 revision 6 on 2026-07-14. No additional revision training is recorded in this complete snapshot."
+    },
+    "D8": {
+      "available": true,
+      "facts": {
+        "record_type": "shift_log",
+        "line": "UT-09",
+        "shift": "day",
+        "date": "2026-08-14",
+        "notes": "Utilities housekeeping and inventory checked. No evidence on the CAPA effectiveness cohort."
+      },
+      "content": "FICTIONAL TRAINING RECORD\nUtilities shift log | D8 | record revision 1 | issued 2026-08-14\nCustodian: user-01\n\nUtilities housekeeping and inventory checked. No evidence on the CAPA effectiveness cohort."
+    }
+  }
+}

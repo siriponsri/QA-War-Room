@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="QA War Room AI model settings: provider, API key (stored locally) and model choice.">
+  <title>QA War Room · Settings</title>
+  <link rel="icon" href="/favicon.svg">
+  <link rel="stylesheet" href="/live.css">
+  <script src="/personas.js"></script>
+  <script src="/ui.js"></script>
+  <script defer src="/settings.js"></script>
+</head>
+<body class="page-settings">
+  <a class="skip-link" href="#main" data-ui="skipSettings">Skip to settings</a>
+  <div id="app" class="app">
+    <aside id="sidebar" class="sidebar" aria-label="Navigation">
+      <a class="brand" href="/">
+        <span class="brand-mark" aria-hidden="true">QA</span>
+        <span class="brand-text"><strong data-ui="appName">QA War Room</strong><small data-ui="tagline"></small></span>
+      </a>
+      <nav class="nav" aria-label="Pages">
+        <a href="/" class="nav-link"><span data-icon="chat"></span><span data-ui="navChat"></span></a>
+        <a href="/dashboard.html" class="nav-link"><span data-icon="grid"></span><span data-ui="navDashboard"></span></a>
+        <a href="/settings.html" class="nav-link is-current" aria-current="page"><span data-icon="gear"></span><span data-ui="navSettings"></span></a>
+      </nav>
+      <a href="/" class="btn btn-primary btn-block"><span data-icon="plus"></span><span data-ui="newRoom"></span></a>
+      <div class="history"></div>
+      <div class="side-prefs narrow-only" role="group" data-ui-label="display">
+        <span data-ui="display"></span>
+        <button class="icon-btn lang-btn js-lang" type="button">EN</button>
+        <button class="icon-btn js-theme" type="button"></button>
+      </div>
+      <div class="side-foot">
+        <a href="/manual.html" class="nav-link subtle"><span data-icon="desk"></span><span data-ui="navManual"></span></a>
+        <p class="local-note"><span class="dot dot-live" aria-hidden="true"></span><span data-ui="localOnly"></span></p>
+      </div>
+    </aside>
+    <div id="scrim" class="scrim"></div>
+
+    <main id="main" class="dash" tabindex="-1">
+      <header class="topbar">
+        <button id="nav-toggle" class="icon-btn only-narrow" type="button" aria-controls="sidebar" aria-expanded="false" data-ui-label="menu"><span data-icon="menu"></span></button>
+        <div class="dash-title"><h1 data-ui="navSettings"></h1></div>
+        <div class="topbar-actions">
+          <button id="language-toggle" class="icon-btn lang-btn js-lang wide-only" type="button">EN</button>
+          <button id="theme-toggle" class="icon-btn js-theme wide-only" type="button"></button>
+        </div>
+      </header>
+
+      <div class="dash-content settings-content">
+        <section class="hero settings-hero" aria-labelledby="set-heading">
+          <div class="hero-text">
+            <h2 id="set-heading" data-ui="setTitle"></h2>
+            <p data-ui="setIntro"></p>
+          </div>
+        </section>
+        <p class="notice"><span data-icon="info"></span><span data-ui="setNotice"></span></p>
+        <div id="banner" class="banner" role="status" aria-live="polite" hidden>
+          <span id="banner-icon" class="banner-icon"></span>
+          <span id="banner-text" class="banner-text"></span>
+          <button id="banner-retry" class="btn btn-small" type="button" data-ui="retry" hidden></button>
+        </div>
+
+        <div class="settings-grid">
+          <nav class="provider-list panel" aria-labelledby="providers-title">
+            <h2 id="providers-title" class="section-title" data-ui="providers"></h2>
+            <ul id="providers" class="providers"><li class="skeleton-row"></li><li class="skeleton-row"></li><li class="skeleton-row"></li></ul>
+          </nav>
+
+          <form id="provider-form" class="panel provider-panel" novalidate aria-labelledby="provider-name" hidden>
+            <header class="provider-head">
+              <div>
+                <h2 id="provider-name"></h2>
+                <p id="provider-status" class="provider-status"></p>
+              </div>
+              <div class="provider-links">
+                <a id="get-key" class="text-link" target="_blank" rel="noopener noreferrer" data-ui="getKey"></a>
+                <a id="price-source" class="text-link" target="_blank" rel="noopener noreferrer" data-ui="priceSource"></a>
+              </div>
+            </header>
+
+            <section id="key-section" class="form-section">
+              <label for="api-key" class="field-label" data-ui="apiKey"></label>
+              <p id="key-current" class="hint"></p>
+              <div class="key-row">
+                <input id="api-key" type="password" autocomplete="off" spellcheck="false" autocapitalize="off" maxlength="400" data-ui-placeholder="keyPlaceholder">
+                <button id="toggle-key" class="btn btn-soft btn-small" type="button" aria-controls="api-key" aria-pressed="false" data-ui="show"></button>
+              </div>
+              <p class="hint" data-ui="keyStorage"></p>
+            </section>
+
+            <section id="url-section" class="form-section" hidden>
+              <label for="base-url" class="field-label" data-ui="baseUrl"></label>
+              <input id="base-url" type="url" inputmode="url" autocomplete="off" spellcheck="false" maxlength="100">
+              <p class="hint" data-ui="baseUrlHint"></p>
+            </section>
+
+            <fieldset class="form-section models-section">
+              <legend class="field-label" data-ui="model"></legend>
+              <p class="hint"><span data-ui="perM"></span> · <span id="price-checked"></span></p>
+              <div id="models" class="model-groups"></div>
+              <label class="model-row model-custom">
+                <input type="radio" name="model" value="__custom">
+                <span class="model-main"><strong data-ui="customModel"></strong>
+                  <input id="custom-model" type="text" list="live-models" autocomplete="off" spellcheck="false" maxlength="200" data-ui-placeholder="customHint">
+                  <datalist id="live-models"></datalist>
+                </span>
+              </label>
+              <p id="price-note" class="hint"></p>
+            </fieldset>
+
+            <label class="check-row"><input id="make-default" type="checkbox"><span data-ui="makeDefault"></span></label>
+
+            <p id="form-error" class="form-error" role="alert" hidden></p>
+            <div class="form-actions">
+              <button id="save" class="btn btn-primary" type="submit"><span data-icon="check"></span><span data-ui="save"></span></button>
+              <button id="test" class="btn btn-soft" type="button"><span data-icon="refresh"></span><span id="test-label" data-ui="test"></span></button>
+              <button id="remove" class="btn btn-ghost-danger" type="button"><span id="remove-label" data-ui="removeKey"></span></button>
+            </div>
+            <div id="test-result" class="test-result" role="status" aria-live="polite" hidden></div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

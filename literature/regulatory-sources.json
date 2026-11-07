@@ -1,0 +1,44 @@
+[
+  {
+    "id": "R01",
+    "title": "ICH Q10 Pharmaceutical Quality System (2008 Step 4)",
+    "url": "https://database.ich.org/sites/default/files/Q10_Guideline.pdf",
+    "status": "Final ICH guideline; local adoption/status separate"
+  },
+  {
+    "id": "R02",
+    "title": "FDA Q9(R1) Quality Risk Management (May 2023)",
+    "url": "https://www.fda.gov/media/167721/download",
+    "status": "Final FDA guidance"
+  },
+  {
+    "id": "R03",
+    "title": "FDA Data Integrity and Compliance With Drug CGMP (December 2018)",
+    "url": "https://www.fda.gov/media/119267/download",
+    "status": "Final FDA guidance"
+  },
+  {
+    "id": "R04",
+    "title": "EU GMP Chapter 1 Pharmaceutical Quality System (2013 operation)",
+    "url": "https://health.ec.europa.eu/document/download/e458c423-f564-4171-b344-030a461c567f_en?filename=vol4-chap1_2013-01_en.pdf",
+    "status": "Current human-medicines index checked 2026-11-07"
+  },
+  {
+    "id": "R05",
+    "title": "EU GMP Annex 22 Artificial Intelligence consultation draft (2025)",
+    "url": "https://health.ec.europa.eu/document/download/5f38a92d-bb8e-4264-8898-ea076e926db6_en?filename=mp_vol4_chap4_annex22_consultation_guideline_en.pdf",
+    "status": "DRAFT; not represented as enacted requirement"
+  },
+  {
+    "id": "R06",
+    "title": "EMA multistakeholder workshop on AI guidance development Annex 22 (2026)",
+    "url": "https://www.ema.europa.eu/en/documents/report/report-multistakeholder-workshop-expert-contributions-artificial-intelligence-guidance-development-annex-22_en.pdf",
+    "status": "Workshop report; discussion of draft scope, not final law"
+  },
+  {
+    "id": "R07",
+    "title": "NIST IR 8356 Security and Trust Considerations for Digital Twin Technology (2025)",
+    "url": "https://nvlpubs.nist.gov/nistpubs/ir/2025/NIST.IR.8356.pdf",
+    "status": "Final technical report; not a GMP validation standard"
+  }
+]

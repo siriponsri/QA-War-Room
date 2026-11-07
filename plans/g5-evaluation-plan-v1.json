@@ -1,0 +1,48 @@
+{
+  "schema": "qawr-g5-plan-v1",
+  "study_id": "qawr-g5-local-preparation-v1",
+  "study_stage": "B_pharmaceutical_prospective",
+  "reference_requirement": "independently_reviewed_manufacturing_gmp",
+  "primary_endpoint": "false_supported_closure_or_effectiveness_claim_rate",
+  "scientific_comparison": {"candidate": null, "comparator": null},
+  "guardrails": {
+    "minimum_fsr_reduction": null,
+    "supported_sensitivity_loss_margin": null,
+    "minimum_coverage": null,
+    "overall_accuracy_loss_margin": null
+  },
+  "reviewed_reference_release_sha256": null,
+  "independent_review_record_sha256": null,
+  "adjudication_record_sha256": null,
+  "sample_size_justification_sha256": null,
+  "model_revision": null,
+  "prompt_bundle_sha256": null,
+  "analysis": {
+    "unit": "construction_family",
+    "weighting": "case_repetition_item_weighted",
+    "interval_method": "paired_family_percentile_bootstrap_v1",
+    "confidence_level": 0.95,
+    "bootstrap_replicates": 2000,
+    "bootstrap_seed": 20261107,
+    "empty_denominator": "null_and_withhold_undefined_intervals",
+    "rare_events": "withhold_zero_event_or_degenerate_intervals_pending_appropriate_method",
+    "ambiguity_policy": "preflagged_ambiguous_separate_stratum_not_primary",
+    "failure_policy": "all_frozen_jobs_retained_no_success_only_primary",
+    "multiplicity": "one_future_primary_comparison_and_joint_guardrails_other_comparisons_exploratory"
+  },
+  "engineering": {
+    "partitions": ["dev"],
+    "methods": ["status-shortcut-v1", "sop-catalog-v1", "sop-adaptive-v1", "ignore-applicability-v1"],
+    "comparison": {"candidate": "sop-adaptive-v1", "comparator": "sop-catalog-v1"},
+    "budgets": [0, 3, 7],
+    "repetitions": 1,
+    "seed": 41,
+    "max_policy_actions": 10000,
+    "max_actions_per_job": 16,
+    "max_source_bytes_per_job": 200000,
+    "max_jobs": 10000,
+    "provider": "offline_only",
+    "max_cost_usd": "0",
+    "retry_limit": 0
+  }
+}

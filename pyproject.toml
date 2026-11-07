@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qa-war-room"
+version = "0.1.0"
+description = "Offline evidence-acquisition simulator for fictional pharmaceutical manufacturing CAPA reviews"
+requires-python = ">=3.10"
+dependencies = []
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+]
+
+[project.scripts]
+qa-war-room = "qa_war_room.__main__:main"
+
+[tool.setuptools]
+packages = ["qa_war_room"]
+
+[tool.setuptools.package-data]
+qa_war_room = ["static/*"]
+
+[tool.setuptools.data-files]
+"share/qa-war-room/demo" = ["data/demo/scenarios.json", "data/demo/evidence.json", "data/demo/README.md"]
+"share/qa-war-room/demo/evaluator" = ["data/demo/evaluator/gold.json"]

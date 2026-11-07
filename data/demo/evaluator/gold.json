@@ -1,0 +1,127 @@
+{
+  "schema_version": "0.1.0",
+  "notice": "Author-defined synthetic references, not real GMP findings. Never expose before decision submission.",
+  "cases": {
+    "MFG-001": {
+      "verdict": "supported",
+      "support_sets": [
+        [
+          "D2",
+          "D3",
+          "D4",
+          "D5",
+          "D6",
+          "D7"
+        ]
+      ],
+      "required_unavailable_requests": [],
+      "explanation": "The protocol and the six specified source records jointly establish implementation, the required procedure training, a successful in-scope effectiveness review, no unresolved related deviations, and current closed status within the cutoff. This reference is defined by the fictional protocol only.",
+      "template_group": "blend-capa-v1",
+      "construction": "author_defined_synthetic_protocol",
+      "expert_validated": false
+    },
+    "MFG-002": {
+      "verdict": "contradicted",
+      "support_sets": [
+        [
+          "D2",
+          "D4"
+        ]
+      ],
+      "required_unavailable_requests": [],
+      "explanation": "The protocol requires zero failed acceptance batches. The in-scope effectiveness report records failed acceptance for B212. That direct counterevidence contradicts the closure claim even though the cover sheet marks the CAPA closed.",
+      "template_group": "blend-capa-v1",
+      "construction": "author_defined_synthetic_protocol",
+      "expert_validated": false
+    },
+    "MFG-003": {
+      "verdict": "insufficient",
+      "support_sets": [
+        [
+          "D2"
+        ]
+      ],
+      "required_unavailable_requests": [
+        "D4"
+      ],
+      "explanation": "The protocol requires a completed effectiveness report. A request to its custodian confirms that the packet contains none at the cutoff. The available records therefore cannot establish the closure claim; missing evidence alone is not proof that manufacturing failed.",
+      "template_group": "blend-capa-v1",
+      "construction": "author_defined_synthetic_protocol",
+      "expert_validated": false
+    },
+    "MFG-004": {
+      "verdict": "insufficient",
+      "support_sets": [
+        [
+          "D2",
+          "D4"
+        ]
+      ],
+      "required_unavailable_requests": [],
+      "explanation": "The positive effectiveness report covers BL-03 and B310–B312, whereas the protocol requires BL-02 and B210–B212. A positive result outside the defined scope does not establish the target claim. It also does not by itself prove failure in the target scope.",
+      "template_group": "blend-capa-v1",
+      "construction": "author_defined_synthetic_protocol",
+      "expert_validated": false
+    },
+    "MFG-005": {
+      "verdict": "supported",
+      "support_sets": [
+        [
+          "D2",
+          "D3",
+          "D4",
+          "D5",
+          "D6",
+          "D7"
+        ]
+      ],
+      "required_unavailable_requests": [],
+      "explanation": "The protocol and the six specified source records jointly establish implementation, the required procedure training, a successful in-scope effectiveness review, no unresolved related deviations, and current closed status within the cutoff. This reference is defined by the fictional protocol only.",
+      "template_group": "packaging-capa-v1",
+      "construction": "author_defined_synthetic_protocol",
+      "expert_validated": false
+    },
+    "MFG-006": {
+      "verdict": "contradicted",
+      "support_sets": [
+        [
+          "D2",
+          "D7"
+        ]
+      ],
+      "required_unavailable_requests": [],
+      "explanation": "The protocol requires training on SOP-PK-112 revision 6 before the cohort window. The expressly complete register records revision 5 only for every required operator. In this closed synthetic register, a mandatory prerequisite is explicitly unmet. In a real incomplete register, this could require an insufficient-evidence conclusion instead.",
+      "template_group": "packaging-capa-v1",
+      "construction": "author_defined_synthetic_protocol",
+      "expert_validated": false
+    },
+    "MFG-007": {
+      "verdict": "contradicted",
+      "support_sets": [
+        [
+          "D2",
+          "D6"
+        ]
+      ],
+      "required_unavailable_requests": [],
+      "explanation": "The claim is evaluated as of 31 August, and the complete status register records reopening effective 29 August. The protocol requires current closed status. Earlier favorable evidence and a historical closure sheet do not erase the later status change.",
+      "template_group": "packaging-capa-v1",
+      "construction": "author_defined_synthetic_protocol",
+      "expert_validated": false
+    },
+    "MFG-008": {
+      "verdict": "insufficient",
+      "support_sets": [
+        [
+          "D2",
+          "D4"
+        ]
+      ],
+      "required_unavailable_requests": [],
+      "explanation": "The only effectiveness report was completed on 5 September, after the 31 August assessment cutoff. It may inform a later review, but cannot demonstrate that all required documented verification was completed at the stated cutoff. The fixture does not assert that the manufacturing outcome itself failed.",
+      "template_group": "packaging-capa-v1",
+      "construction": "author_defined_synthetic_protocol",
+      "expert_validated": false
+    }
+  }
+}

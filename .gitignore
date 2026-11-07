@@ -1,0 +1,27 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.pytest_cache/
+.coverage
+.DS_Store
+node_modules/
+data/external/
+data/derived/
+runs/
+reports/
+dist/
+reading-pack/
+*.pdf
+*.zip
+!tests/fixtures/
+
+# Local research assets included in the Windows bundle
+benchmark-data/
+PACKAGE_MANIFEST.json
+
+# Local provider settings and API keys (never commit)
+.qawr/

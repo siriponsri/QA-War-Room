@@ -1,0 +1,701 @@
+{
+  "schema_version": "0.1.0",
+  "cases": [
+    {
+      "id": "MFG-001",
+      "title": "Blending CAPA evidence packet 001",
+      "brief": "Review a fictional CAPA packet for BL-02. The cover sheet marks closure; assess the actual records against the stated protocol and review cutoff.",
+      "claim": "As of 2026-07-31, CAPA-2026-014 meets every closure criterion explicitly specified in EC-014 revision 2 for line BL-02 and batches B210, B211, B212.",
+      "as_of": "2026-07-31",
+      "process": "Oral solid dose manufacturing / blending",
+      "protocol_id": "EC-014",
+      "simulation_notice": "All organizations, people, records and results are fictional. This case tests a local scenario protocol, not a legal or regulatory GMP determination.",
+      "budget": 8,
+      "catalog": [
+        {
+          "id": "D1",
+          "title": "Deviation and CAPA closure cover sheet",
+          "document_type": "closure_summary",
+          "owner": "user-02",
+          "revision": 1,
+          "date": "2026-07-22",
+          "cost": 1
+        },
+        {
+          "id": "D2",
+          "title": "Approved CAPA closure and effectiveness protocol",
+          "document_type": "closure_protocol",
+          "owner": "user-02",
+          "revision": 2,
+          "date": "2026-06-01",
+          "cost": 1
+        },
+        {
+          "id": "D3",
+          "title": "Manufacturing implementation record",
+          "document_type": "implementation_record",
+          "owner": "user-01",
+          "revision": 1,
+          "date": "2026-06-12",
+          "cost": 1
+        },
+        {
+          "id": "D4",
+          "title": "Effectiveness verification report",
+          "document_type": "effectiveness_report",
+          "owner": "user-02",
+          "revision": 1,
+          "date": "2026-07-20",
+          "cost": 2
+        },
+        {
+          "id": "D5",
+          "title": "Related deviation status review",
+          "document_type": "deviation_trend",
+          "owner": "user-02",
+          "revision": 1,
+          "date": "2026-07-31",
+          "cost": 1
+        },
+        {
+          "id": "D6",
+          "title": "Current CAPA status register",
+          "document_type": "status_log",
+          "owner": "user-02",
+          "revision": 1,
+          "date": "2026-07-31",
+          "cost": 1
+        },
+        {
+          "id": "D7",
+          "title": "Procedure training register",
+          "document_type": "training_record",
+          "owner": "user-01",
+          "revision": 1,
+          "date": "2026-07-31",
+          "cost": 1
+        },
+        {
+          "id": "D8",
+          "title": "Utilities shift log",
+          "document_type": "shift_log",
+          "owner": "user-01",
+          "revision": 1,
+          "date": "2026-07-14",
+          "cost": 1
+        }
+      ],
+      "template_group": "blend-capa-v1",
+      "benchmark_use": "engineering_demo_only"
+    },
+    {
+      "id": "MFG-002",
+      "title": "Blending CAPA evidence packet 002",
+      "brief": "Review a fictional CAPA packet for BL-02. The cover sheet marks closure; assess the actual records against the stated protocol and review cutoff.",
+      "claim": "As of 2026-07-31, CAPA-2026-014 meets every closure criterion explicitly specified in EC-014 revision 2 for line BL-02 and batches B210, B211, B212.",
+      "as_of": "2026-07-31",
+      "process": "Oral solid dose manufacturing / blending",
+      "protocol_id": "EC-014",
+      "simulation_notice": "All organizations, people, records and results are fictional. This case tests a local scenario protocol, not a legal or regulatory GMP determination.",
+      "budget": 8,
+      "catalog": [
+        {
+          "id": "D1",
+          "title": "Deviation and CAPA closure cover sheet",
+          "document_type": "closure_summary",
+          "owner": "user-02",
+          "revision": 1,
+          "date": "2026-07-22",
+          "cost": 1
+        },
+        {
+          "id": "D2",
+          "title": "Approved CAPA closure and effectiveness protocol",
+          "document_type": "closure_protocol",
+          "owner": "user-02",
+          "revision": 2,
+          "date": "2026-06-01",
+          "cost": 1
+        },
+        {
+          "id": "D3",
+          "title": "Manufacturing implementation record",
+          "document_type": "implementation_record",
+          "owner": "user-01",
+          "revision": 1,
+          "date": "2026-06-12",
+          "cost": 1
+        },
+        {
+          "id": "D4",
+          "title": "Effectiveness verification report",
+          "document_type": "effectiveness_report",
+          "owner": "user-02",
+          "revision": 1,
+          "date": "2026-07-20",
+          "cost": 2
+        },
+        {
+          "id": "D5",
+          "title": "Related deviation status review",
+          "document_type": "deviation_trend",
+          "owner": "user-02",
+          "revision": 1,
+          "date": "2026-07-31",
+          "cost": 1
+        },
+        {
+          "id": "D6",
+          "title": "Current CAPA status register",
+          "document_type": "status_log",
+          "owner": "user-02",
+          "revision": 1,
+          "date": "2026-07-31",
+          "cost": 1
+        },
+        {
+          "id": "D7",
+          "title": "Procedure training register",
+          "document_type": "training_record",
+          "owner": "user-01",
+          "revision": 1,
+          "date": "2026-07-31",
+          "cost": 1
+        },
+        {
+          "id": "D8",
+          "title": "Utilities shift log",
+          "document_type": "shift_log",
+          "owner": "user-01",
+          "revision": 1,
+          "date": "2026-07-14",
+          "cost": 1
+        }
+      ],
+      "template_group": "blend-capa-v1",
+      "benchmark_use": "engineering_demo_only"
+    },
+    {
+      "id": "MFG-003",
+      "title": "Blending CAPA evidence packet 003",
+      "brief": "Review a fictional CAPA packet for BL-02. The cover sheet marks closure; assess the actual records against the stated protocol and review cutoff.",
+      "claim": "As of 2026-07-31, CAPA-2026-014 meets every closure criterion explicitly specified in EC-014 revision 2 for line BL-02 and batches B210, B211, B212.",
+      "as_of": "2026-07-31",
+      "process": "Oral solid dose manufacturing / blending",
+      "protocol_id": "EC-014",
+      "simulation_notice": "All organizations, people, records and results are fictional. This case tests a local scenario protocol, not a legal or regulatory GMP determination.",
+      "budget": 8,
+      "catalog": [
+        {
+          "id": "D1",
+          "title": "Deviation and CAPA closure cover sheet",
+          "document_type": "closure_summary",
+          "owner": "user-02",
+          "revision": 1,
+          "date": "2026-07-22",
+          "cost": 1
+        },
+        {
+          "id": "D2",
+          "title": "Approved CAPA closure and effectiveness protocol",
+          "document_type": "closure_protocol",
+          "owner": "user-02",
+          "revision": 2,
+          "date": "2026-06-01",
+          "cost": 1
+        },
+        {
+          "id": "D3",
+          "title": "Manufacturing implementation record",
+          "document_type": "implementation_record",
+          "owner": "user-01",
+          "revision": 1,
+          "date": "2026-06-12",
+          "cost": 1
+        },
+        {
+          "id": "D4",
+          "title": "Effectiveness verification report",
+          "document_type": "effectiveness_report",
+          "owner": "user-02",
+          "revision": 1,
+          "date": "2026-07-20",
+          "cost": 2
+        },
+        {
+          "id": "D5",
+          "title": "Related deviation status review",
+          "document_type": "deviation_trend",
+          "owner": "user-02",
+          "revision": 1,
+          "date": "2026-07-31",
+          "cost": 1
+        },
+        {
+          "id": "D6",
+          "title": "Current CAPA status register",
+          "document_type": "status_log",
+          "owner": "user-02",
+          "revision": 1,
+          "date": "2026-07-31",
+          "cost": 1
+        },
+        {
+          "id": "D7",
+          "title": "Procedure training register",
+          "document_type": "training_record",
+          "owner": "user-01",
+          "revision": 1,
+          "date": "2026-07-31",
+          "cost": 1
+        },
+        {
+          "id": "D8",
+          "title": "Utilities shift log",
+          "document_type": "shift_log",
+          "owner": "user-01",
+          "revision": 1,
+          "date": "2026-07-14",
+          "cost": 1
+        }
+      ],
+      "template_group": "blend-capa-v1",
+      "benchmark_use": "engineering_demo_only"
+    },
+    {
+      "id": "MFG-004",
+      "title": "Blending CAPA evidence packet 004",
+      "brief": "Review a fictional CAPA packet for BL-02. The cover sheet marks closure; assess the actual records against the stated protocol and review cutoff.",
+      "claim": "As of 2026-07-31, CAPA-2026-014 meets every closure criterion explicitly specified in EC-014 revision 2 for line BL-02 and batches B210, B211, B212.",
+      "as_of": "2026-07-31",
+      "process": "Oral solid dose manufacturing / blending",
+      "protocol_id": "EC-014",
+      "simulation_notice": "All organizations, people, records and results are fictional. This case tests a local scenario protocol, not a legal or regulatory GMP determination.",
+      "budget": 8,
+      "catalog": [
+        {
+          "id": "D1",
+          "title": "Deviation and CAPA closure cover sheet",
+          "document_type": "closure_summary",
+          "owner": "user-02",
+          "revision": 1,
+          "date": "2026-07-22",
+          "cost": 1
+        },
+        {
+          "id": "D2",
+          "title": "Approved CAPA closure and effectiveness protocol",
+          "document_type": "closure_protocol",
+          "owner": "user-02",
+          "revision": 2,
+          "date": "2026-06-01",
+          "cost": 1
+        },
+        {
+          "id": "D3",
+          "title": "Manufacturing implementation record",
+          "document_type": "implementation_record",
+          "owner": "user-01",
+          "revision": 1,
+          "date": "2026-06-12",
+          "cost": 1
+        },
+        {
+          "id": "D4",
+          "title": "Effectiveness verification report",
+          "document_type": "effectiveness_report",
+          "owner": "user-02",
+          "revision": 1,
+          "date": "2026-07-20",
+          "cost": 2
+        },
+        {
+          "id": "D5",
+          "title": "Related deviation status review",
+          "document_type": "deviation_trend",
+          "owner": "user-02",
+          "revision": 1,
+          "date": "2026-07-31",
+          "cost": 1
+        },
+        {
+          "id": "D6",
+          "title": "Current CAPA status register",
+          "document_type": "status_log",
+          "owner": "user-02",
+          "revision": 1,
+          "date": "2026-07-31",
+          "cost": 1
+        },
+        {
+          "id": "D7",
+          "title": "Procedure training register",
+          "document_type": "training_record",
+          "owner": "user-01",
+          "revision": 1,
+          "date": "2026-07-31",
+          "cost": 1
+        },
+        {
+          "id": "D8",
+          "title": "Utilities shift log",
+          "document_type": "shift_log",
+          "owner": "user-01",
+          "revision": 1,
+          "date": "2026-07-14",
+          "cost": 1
+        }
+      ],
+      "template_group": "blend-capa-v1",
+      "benchmark_use": "engineering_demo_only"
+    },
+    {
+      "id": "MFG-005",
+      "title": "Packaging CAPA evidence packet 005",
+      "brief": "Review a fictional CAPA packet for PK-04. The cover sheet marks closure; assess the actual records against the stated protocol and review cutoff.",
+      "claim": "As of 2026-08-31, CAPA-2026-028 meets every closure criterion explicitly specified in EC-028 revision 2 for line PK-04 and batches P810, P811, P812.",
+      "as_of": "2026-08-31",
+      "process": "Oral solid dose manufacturing / packaging and label reconciliation",
+      "protocol_id": "EC-028",
+      "simulation_notice": "All organizations, people, records and results are fictional. This case tests a local scenario protocol, not a legal or regulatory GMP determination.",
+      "budget": 8,
+      "catalog": [
+        {
+          "id": "D1",
+          "title": "Deviation and CAPA closure cover sheet",
+          "document_type": "closure_summary",
+          "owner": "user-02",
+          "revision": 1,
+          "date": "2026-08-22",
+          "cost": 1
+        },
+        {
+          "id": "D2",
+          "title": "Approved CAPA closure and effectiveness protocol",
+          "document_type": "closure_protocol",
+          "owner": "user-02",
+          "revision": 2,
+          "date": "2026-07-01",
+          "cost": 1
+        },
+        {
+          "id": "D3",
+          "title": "Manufacturing implementation record",
+          "document_type": "implementation_record",
+          "owner": "user-01",
+          "revision": 1,
+          "date": "2026-07-12",
+          "cost": 1
+        },
+        {
+          "id": "D4",
+          "title": "Effectiveness verification report",
+          "document_type": "effectiveness_report",
+          "owner": "user-02",
+          "revision": 1,
+          "date": "2026-08-20",
+          "cost": 2
+        },
+        {
+          "id": "D5",
+          "title": "Related deviation status review",
+          "document_type": "deviation_trend",
+          "owner": "user-02",
+          "revision": 1,
+          "date": "2026-08-31",
+          "cost": 1
+        },
+        {
+          "id": "D6",
+          "title": "Current CAPA status register",
+          "document_type": "status_log",
+          "owner": "user-02",
+          "revision": 1,
+          "date": "2026-08-31",
+          "cost": 1
+        },
+        {
+          "id": "D7",
+          "title": "Procedure training register",
+          "document_type": "training_record",
+          "owner": "user-01",
+          "revision": 1,
+          "date": "2026-08-31",
+          "cost": 1
+        },
+        {
+          "id": "D8",
+          "title": "Utilities shift log",
+          "document_type": "shift_log",
+          "owner": "user-01",
+          "revision": 1,
+          "date": "2026-08-14",
+          "cost": 1
+        }
+      ],
+      "template_group": "packaging-capa-v1",
+      "benchmark_use": "engineering_demo_only"
+    },
+    {
+      "id": "MFG-006",
+      "title": "Packaging CAPA evidence packet 006",
+      "brief": "Review a fictional CAPA packet for PK-04. The cover sheet marks closure; assess the actual records against the stated protocol and review cutoff.",
+      "claim": "As of 2026-08-31, CAPA-2026-028 meets every closure criterion explicitly specified in EC-028 revision 2 for line PK-04 and batches P810, P811, P812.",
+      "as_of": "2026-08-31",
+      "process": "Oral solid dose manufacturing / packaging and label reconciliation",
+      "protocol_id": "EC-028",
+      "simulation_notice": "All organizations, people, records and results are fictional. This case tests a local scenario protocol, not a legal or regulatory GMP determination.",
+      "budget": 8,
+      "catalog": [
+        {
+          "id": "D1",
+          "title": "Deviation and CAPA closure cover sheet",
+          "document_type": "closure_summary",
+          "owner": "user-02",
+          "revision": 1,
+          "date": "2026-08-22",
+          "cost": 1
+        },
+        {
+          "id": "D2",
+          "title": "Approved CAPA closure and effectiveness protocol",
+          "document_type": "closure_protocol",
+          "owner": "user-02",
+          "revision": 2,
+          "date": "2026-07-01",
+          "cost": 1
+        },
+        {
+          "id": "D3",
+          "title": "Manufacturing implementation record",
+          "document_type": "implementation_record",
+          "owner": "user-01",
+          "revision": 1,
+          "date": "2026-07-12",
+          "cost": 1
+        },
+        {
+          "id": "D4",
+          "title": "Effectiveness verification report",
+          "document_type": "effectiveness_report",
+          "owner": "user-02",
+          "revision": 1,
+          "date": "2026-08-20",
+          "cost": 2
+        },
+        {
+          "id": "D5",
+          "title": "Related deviation status review",
+          "document_type": "deviation_trend",
+          "owner": "user-02",
+          "revision": 1,
+          "date": "2026-08-31",
+          "cost": 1
+        },
+        {
+          "id": "D6",
+          "title": "Current CAPA status register",
+          "document_type": "status_log",
+          "owner": "user-02",
+          "revision": 1,
+          "date": "2026-08-31",
+          "cost": 1
+        },
+        {
+          "id": "D7",
+          "title": "Procedure training register",
+          "document_type": "training_record",
+          "owner": "user-01",
+          "revision": 1,
+          "date": "2026-08-31",
+          "cost": 1
+        },
+        {
+          "id": "D8",
+          "title": "Utilities shift log",
+          "document_type": "shift_log",
+          "owner": "user-01",
+          "revision": 1,
+          "date": "2026-08-14",
+          "cost": 1
+        }
+      ],
+      "template_group": "packaging-capa-v1",
+      "benchmark_use": "engineering_demo_only"
+    },
+    {
+      "id": "MFG-007",
+      "title": "Packaging CAPA evidence packet 007",
+      "brief": "Review a fictional CAPA packet for PK-04. The cover sheet marks closure; assess the actual records against the stated protocol and review cutoff.",
+      "claim": "As of 2026-08-31, CAPA-2026-028 meets every closure criterion explicitly specified in EC-028 revision 2 for line PK-04 and batches P810, P811, P812.",
+      "as_of": "2026-08-31",
+      "process": "Oral solid dose manufacturing / packaging and label reconciliation",
+      "protocol_id": "EC-028",
+      "simulation_notice": "All organizations, people, records and results are fictional. This case tests a local scenario protocol, not a legal or regulatory GMP determination.",
+      "budget": 8,
+      "catalog": [
+        {
+          "id": "D1",
+          "title": "Deviation and CAPA closure cover sheet",
+          "document_type": "closure_summary",
+          "owner": "user-02",
+          "revision": 1,
+          "date": "2026-08-22",
+          "cost": 1
+        },
+        {
+          "id": "D2",
+          "title": "Approved CAPA closure and effectiveness protocol",
+          "document_type": "closure_protocol",
+          "owner": "user-02",
+          "revision": 2,
+          "date": "2026-07-01",
+          "cost": 1
+        },
+        {
+          "id": "D3",
+          "title": "Manufacturing implementation record",
+          "document_type": "implementation_record",
+          "owner": "user-01",
+          "revision": 1,
+          "date": "2026-07-12",
+          "cost": 1
+        },
+        {
+          "id": "D4",
+          "title": "Effectiveness verification report",
+          "document_type": "effectiveness_report",
+          "owner": "user-02",
+          "revision": 1,
+          "date": "2026-08-20",
+          "cost": 2
+        },
+        {
+          "id": "D5",
+          "title": "Related deviation status review",
+          "document_type": "deviation_trend",
+          "owner": "user-02",
+          "revision": 1,
+          "date": "2026-08-31",
+          "cost": 1
+        },
+        {
+          "id": "D6",
+          "title": "Current CAPA status register",
+          "document_type": "status_log",
+          "owner": "user-02",
+          "revision": 1,
+          "date": "2026-08-31",
+          "cost": 1
+        },
+        {
+          "id": "D7",
+          "title": "Procedure training register",
+          "document_type": "training_record",
+          "owner": "user-01",
+          "revision": 1,
+          "date": "2026-08-31",
+          "cost": 1
+        },
+        {
+          "id": "D8",
+          "title": "Utilities shift log",
+          "document_type": "shift_log",
+          "owner": "user-01",
+          "revision": 1,
+          "date": "2026-08-14",
+          "cost": 1
+        }
+      ],
+      "template_group": "packaging-capa-v1",
+      "benchmark_use": "engineering_demo_only"
+    },
+    {
+      "id": "MFG-008",
+      "title": "Packaging CAPA evidence packet 008",
+      "brief": "Review a fictional CAPA packet for PK-04. The cover sheet marks closure; assess the actual records against the stated protocol and review cutoff.",
+      "claim": "As of 2026-08-31, CAPA-2026-028 meets every closure criterion explicitly specified in EC-028 revision 2 for line PK-04 and batches P810, P811, P812.",
+      "as_of": "2026-08-31",
+      "process": "Oral solid dose manufacturing / packaging and label reconciliation",
+      "protocol_id": "EC-028",
+      "simulation_notice": "All organizations, people, records and results are fictional. This case tests a local scenario protocol, not a legal or regulatory GMP determination.",
+      "budget": 8,
+      "catalog": [
+        {
+          "id": "D1",
+          "title": "Deviation and CAPA closure cover sheet",
+          "document_type": "closure_summary",
+          "owner": "user-02",
+          "revision": 1,
+          "date": "2026-08-22",
+          "cost": 1
+        },
+        {
+          "id": "D2",
+          "title": "Approved CAPA closure and effectiveness protocol",
+          "document_type": "closure_protocol",
+          "owner": "user-02",
+          "revision": 2,
+          "date": "2026-07-01",
+          "cost": 1
+        },
+        {
+          "id": "D3",
+          "title": "Manufacturing implementation record",
+          "document_type": "implementation_record",
+          "owner": "user-01",
+          "revision": 1,
+          "date": "2026-07-12",
+          "cost": 1
+        },
+        {
+          "id": "D4",
+          "title": "Effectiveness verification report",
+          "document_type": "effectiveness_report",
+          "owner": "user-02",
+          "revision": 1,
+          "date": "2026-09-05",
+          "cost": 2
+        },
+        {
+          "id": "D5",
+          "title": "Related deviation status review",
+          "document_type": "deviation_trend",
+          "owner": "user-02",
+          "revision": 1,
+          "date": "2026-08-31",
+          "cost": 1
+        },
+        {
+          "id": "D6",
+          "title": "Current CAPA status register",
+          "document_type": "status_log",
+          "owner": "user-02",
+          "revision": 1,
+          "date": "2026-08-31",
+          "cost": 1
+        },
+        {
+          "id": "D7",
+          "title": "Procedure training register",
+          "document_type": "training_record",
+          "owner": "user-01",
+          "revision": 1,
+          "date": "2026-08-31",
+          "cost": 1
+        },
+        {
+          "id": "D8",
+          "title": "Utilities shift log",
+          "document_type": "shift_log",
+          "owner": "user-01",
+          "revision": 1,
+          "date": "2026-08-14",
+          "cost": 1
+        }
+      ],
+      "template_group": "packaging-capa-v1",
+      "benchmark_use": "engineering_demo_only"
+    }
+  ]
+}

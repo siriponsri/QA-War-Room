@@ -1,0 +1,594 @@
+{
+  "schema_version": "0.1.0",
+  "evaluation_kind": "engineering_smoke_test_on_author_defined_synthetic_fixtures",
+  "scientific_performance_claim": false,
+  "limitations": [
+    "Policies and fixture rules were authored together; this is not independent evaluation.",
+    "Eight cases share two templates. They are not eight independent real audit samples.",
+    "All references are synthetic and have not been independently reviewed by a pharmaceutical QA expert.",
+    "Reference support coverage tests IDs, not semantic entailment or rationale quality.",
+    "No LLM, RL training, external dataset evaluation, real GMP validation, or human learning study was run."
+  ],
+  "fixture_sha256": {
+    "scenarios.json": "a2296f8b3929968c94305b7a9b8f4e6a084809c39289b96fe35942454a4cc479",
+    "evidence.json": "dce71182231ee916841decfb1c5380df9fbb8cac0583d12c61b56453b4661b45",
+    "evaluator/gold.json": "435be1a52e7785d6bbcf7d861d144a6ba8cc176a4a9ae762ea7a50a691a5c6fa"
+  },
+  "template_groups": [
+    {
+      "template_group": "blend-capa-v1",
+      "cases": [
+        {
+          "case_id": "MFG-001",
+          "reference_verdict": "supported"
+        },
+        {
+          "case_id": "MFG-002",
+          "reference_verdict": "contradicted"
+        },
+        {
+          "case_id": "MFG-003",
+          "reference_verdict": "insufficient"
+        },
+        {
+          "case_id": "MFG-004",
+          "reference_verdict": "insufficient"
+        }
+      ]
+    },
+    {
+      "template_group": "packaging-capa-v1",
+      "cases": [
+        {
+          "case_id": "MFG-005",
+          "reference_verdict": "supported"
+        },
+        {
+          "case_id": "MFG-006",
+          "reference_verdict": "contradicted"
+        },
+        {
+          "case_id": "MFG-007",
+          "reference_verdict": "contradicted"
+        },
+        {
+          "case_id": "MFG-008",
+          "reference_verdict": "insufficient"
+        }
+      ]
+    }
+  ],
+  "summary": [
+    {
+      "policy": "auditor-expert-01",
+      "n_cases": 8,
+      "verdict_accuracy": 1.0,
+      "reference_support_coverage": 1.0,
+      "decision_and_support_rate": 1.0,
+      "false_supported_rate_on_non_supported": 0.0,
+      "mean_credits": 6.25
+    },
+    {
+      "policy": "auditor-expert-02",
+      "n_cases": 8,
+      "verdict_accuracy": 1.0,
+      "reference_support_coverage": 1.0,
+      "decision_and_support_rate": 1.0,
+      "false_supported_rate_on_non_supported": 0.0,
+      "mean_credits": 6.125
+    },
+    {
+      "policy": "auditor-newbie-01",
+      "n_cases": 8,
+      "verdict_accuracy": 0.25,
+      "reference_support_coverage": 0.0,
+      "decision_and_support_rate": 0.0,
+      "false_supported_rate_on_non_supported": 1.0,
+      "mean_credits": 1.0
+    },
+    {
+      "policy": "auditor-newbie-02",
+      "n_cases": 8,
+      "verdict_accuracy": 1.0,
+      "reference_support_coverage": 1.0,
+      "decision_and_support_rate": 1.0,
+      "false_supported_rate_on_non_supported": 0.0,
+      "mean_credits": 7.5
+    }
+  ],
+  "episodes": [
+    {
+      "case_id": "MFG-001",
+      "policy": "auditor-expert-01",
+      "predicted_verdict": "supported",
+      "reference_verdict": "supported",
+      "verdict_correct": true,
+      "reference_support_complete": true,
+      "decision_and_support_correct": true,
+      "credits_spent": 7,
+      "requests": 6,
+      "citations": [
+        "D2",
+        "D3",
+        "D7",
+        "D4",
+        "D5",
+        "D6"
+      ]
+    },
+    {
+      "case_id": "MFG-002",
+      "policy": "auditor-expert-01",
+      "predicted_verdict": "contradicted",
+      "reference_verdict": "contradicted",
+      "verdict_correct": true,
+      "reference_support_complete": true,
+      "decision_and_support_correct": true,
+      "credits_spent": 5,
+      "requests": 4,
+      "citations": [
+        "D2",
+        "D4"
+      ]
+    },
+    {
+      "case_id": "MFG-003",
+      "policy": "auditor-expert-01",
+      "predicted_verdict": "insufficient",
+      "reference_verdict": "insufficient",
+      "verdict_correct": true,
+      "reference_support_complete": true,
+      "decision_and_support_correct": true,
+      "credits_spent": 7,
+      "requests": 6,
+      "citations": [
+        "D2"
+      ]
+    },
+    {
+      "case_id": "MFG-004",
+      "policy": "auditor-expert-01",
+      "predicted_verdict": "insufficient",
+      "reference_verdict": "insufficient",
+      "verdict_correct": true,
+      "reference_support_complete": true,
+      "decision_and_support_correct": true,
+      "credits_spent": 7,
+      "requests": 6,
+      "citations": [
+        "D2",
+        "D4"
+      ]
+    },
+    {
+      "case_id": "MFG-005",
+      "policy": "auditor-expert-01",
+      "predicted_verdict": "supported",
+      "reference_verdict": "supported",
+      "verdict_correct": true,
+      "reference_support_complete": true,
+      "decision_and_support_correct": true,
+      "credits_spent": 7,
+      "requests": 6,
+      "citations": [
+        "D2",
+        "D3",
+        "D7",
+        "D4",
+        "D5",
+        "D6"
+      ]
+    },
+    {
+      "case_id": "MFG-006",
+      "policy": "auditor-expert-01",
+      "predicted_verdict": "contradicted",
+      "reference_verdict": "contradicted",
+      "verdict_correct": true,
+      "reference_support_complete": true,
+      "decision_and_support_correct": true,
+      "credits_spent": 3,
+      "requests": 3,
+      "citations": [
+        "D2",
+        "D7"
+      ]
+    },
+    {
+      "case_id": "MFG-007",
+      "policy": "auditor-expert-01",
+      "predicted_verdict": "contradicted",
+      "reference_verdict": "contradicted",
+      "verdict_correct": true,
+      "reference_support_complete": true,
+      "decision_and_support_correct": true,
+      "credits_spent": 7,
+      "requests": 6,
+      "citations": [
+        "D2",
+        "D6"
+      ]
+    },
+    {
+      "case_id": "MFG-008",
+      "policy": "auditor-expert-01",
+      "predicted_verdict": "insufficient",
+      "reference_verdict": "insufficient",
+      "verdict_correct": true,
+      "reference_support_complete": true,
+      "decision_and_support_correct": true,
+      "credits_spent": 7,
+      "requests": 6,
+      "citations": [
+        "D2",
+        "D4"
+      ]
+    },
+    {
+      "case_id": "MFG-001",
+      "policy": "auditor-expert-02",
+      "predicted_verdict": "supported",
+      "reference_verdict": "supported",
+      "verdict_correct": true,
+      "reference_support_complete": true,
+      "decision_and_support_correct": true,
+      "credits_spent": 7,
+      "requests": 6,
+      "citations": [
+        "D2",
+        "D3",
+        "D7",
+        "D4",
+        "D5",
+        "D6"
+      ]
+    },
+    {
+      "case_id": "MFG-002",
+      "policy": "auditor-expert-02",
+      "predicted_verdict": "contradicted",
+      "reference_verdict": "contradicted",
+      "verdict_correct": true,
+      "reference_support_complete": true,
+      "decision_and_support_correct": true,
+      "credits_spent": 5,
+      "requests": 4,
+      "citations": [
+        "D2",
+        "D4"
+      ]
+    },
+    {
+      "case_id": "MFG-003",
+      "policy": "auditor-expert-02",
+      "predicted_verdict": "insufficient",
+      "reference_verdict": "insufficient",
+      "verdict_correct": true,
+      "reference_support_complete": true,
+      "decision_and_support_correct": true,
+      "credits_spent": 7,
+      "requests": 6,
+      "citations": [
+        "D2"
+      ]
+    },
+    {
+      "case_id": "MFG-004",
+      "policy": "auditor-expert-02",
+      "predicted_verdict": "insufficient",
+      "reference_verdict": "insufficient",
+      "verdict_correct": true,
+      "reference_support_complete": true,
+      "decision_and_support_correct": true,
+      "credits_spent": 7,
+      "requests": 6,
+      "citations": [
+        "D2",
+        "D4"
+      ]
+    },
+    {
+      "case_id": "MFG-005",
+      "policy": "auditor-expert-02",
+      "predicted_verdict": "supported",
+      "reference_verdict": "supported",
+      "verdict_correct": true,
+      "reference_support_complete": true,
+      "decision_and_support_correct": true,
+      "credits_spent": 7,
+      "requests": 6,
+      "citations": [
+        "D2",
+        "D3",
+        "D7",
+        "D4",
+        "D5",
+        "D6"
+      ]
+    },
+    {
+      "case_id": "MFG-006",
+      "policy": "auditor-expert-02",
+      "predicted_verdict": "contradicted",
+      "reference_verdict": "contradicted",
+      "verdict_correct": true,
+      "reference_support_complete": true,
+      "decision_and_support_correct": true,
+      "credits_spent": 7,
+      "requests": 6,
+      "citations": [
+        "D2",
+        "D7"
+      ]
+    },
+    {
+      "case_id": "MFG-007",
+      "policy": "auditor-expert-02",
+      "predicted_verdict": "contradicted",
+      "reference_verdict": "contradicted",
+      "verdict_correct": true,
+      "reference_support_complete": true,
+      "decision_and_support_correct": true,
+      "credits_spent": 2,
+      "requests": 2,
+      "citations": [
+        "D2",
+        "D6"
+      ]
+    },
+    {
+      "case_id": "MFG-008",
+      "policy": "auditor-expert-02",
+      "predicted_verdict": "insufficient",
+      "reference_verdict": "insufficient",
+      "verdict_correct": true,
+      "reference_support_complete": true,
+      "decision_and_support_correct": true,
+      "credits_spent": 7,
+      "requests": 6,
+      "citations": [
+        "D2",
+        "D4"
+      ]
+    },
+    {
+      "case_id": "MFG-001",
+      "policy": "auditor-newbie-01",
+      "predicted_verdict": "supported",
+      "reference_verdict": "supported",
+      "verdict_correct": true,
+      "reference_support_complete": false,
+      "decision_and_support_correct": false,
+      "credits_spent": 1,
+      "requests": 1,
+      "citations": [
+        "D1"
+      ]
+    },
+    {
+      "case_id": "MFG-002",
+      "policy": "auditor-newbie-01",
+      "predicted_verdict": "supported",
+      "reference_verdict": "contradicted",
+      "verdict_correct": false,
+      "reference_support_complete": false,
+      "decision_and_support_correct": false,
+      "credits_spent": 1,
+      "requests": 1,
+      "citations": [
+        "D1"
+      ]
+    },
+    {
+      "case_id": "MFG-003",
+      "policy": "auditor-newbie-01",
+      "predicted_verdict": "supported",
+      "reference_verdict": "insufficient",
+      "verdict_correct": false,
+      "reference_support_complete": false,
+      "decision_and_support_correct": false,
+      "credits_spent": 1,
+      "requests": 1,
+      "citations": [
+        "D1"
+      ]
+    },
+    {
+      "case_id": "MFG-004",
+      "policy": "auditor-newbie-01",
+      "predicted_verdict": "supported",
+      "reference_verdict": "insufficient",
+      "verdict_correct": false,
+      "reference_support_complete": false,
+      "decision_and_support_correct": false,
+      "credits_spent": 1,
+      "requests": 1,
+      "citations": [
+        "D1"
+      ]
+    },
+    {
+      "case_id": "MFG-005",
+      "policy": "auditor-newbie-01",
+      "predicted_verdict": "supported",
+      "reference_verdict": "supported",
+      "verdict_correct": true,
+      "reference_support_complete": false,
+      "decision_and_support_correct": false,
+      "credits_spent": 1,
+      "requests": 1,
+      "citations": [
+        "D1"
+      ]
+    },
+    {
+      "case_id": "MFG-006",
+      "policy": "auditor-newbie-01",
+      "predicted_verdict": "supported",
+      "reference_verdict": "contradicted",
+      "verdict_correct": false,
+      "reference_support_complete": false,
+      "decision_and_support_correct": false,
+      "credits_spent": 1,
+      "requests": 1,
+      "citations": [
+        "D1"
+      ]
+    },
+    {
+      "case_id": "MFG-007",
+      "policy": "auditor-newbie-01",
+      "predicted_verdict": "supported",
+      "reference_verdict": "contradicted",
+      "verdict_correct": false,
+      "reference_support_complete": false,
+      "decision_and_support_correct": false,
+      "credits_spent": 1,
+      "requests": 1,
+      "citations": [
+        "D1"
+      ]
+    },
+    {
+      "case_id": "MFG-008",
+      "policy": "auditor-newbie-01",
+      "predicted_verdict": "supported",
+      "reference_verdict": "insufficient",
+      "verdict_correct": false,
+      "reference_support_complete": false,
+      "decision_and_support_correct": false,
+      "credits_spent": 1,
+      "requests": 1,
+      "citations": [
+        "D1"
+      ]
+    },
+    {
+      "case_id": "MFG-001",
+      "policy": "auditor-newbie-02",
+      "predicted_verdict": "supported",
+      "reference_verdict": "supported",
+      "verdict_correct": true,
+      "reference_support_complete": true,
+      "decision_and_support_correct": true,
+      "credits_spent": 8,
+      "requests": 7,
+      "citations": [
+        "D2",
+        "D3",
+        "D7",
+        "D4",
+        "D5",
+        "D6"
+      ]
+    },
+    {
+      "case_id": "MFG-002",
+      "policy": "auditor-newbie-02",
+      "predicted_verdict": "contradicted",
+      "reference_verdict": "contradicted",
+      "verdict_correct": true,
+      "reference_support_complete": true,
+      "decision_and_support_correct": true,
+      "credits_spent": 5,
+      "requests": 4,
+      "citations": [
+        "D2",
+        "D4"
+      ]
+    },
+    {
+      "case_id": "MFG-003",
+      "policy": "auditor-newbie-02",
+      "predicted_verdict": "insufficient",
+      "reference_verdict": "insufficient",
+      "verdict_correct": true,
+      "reference_support_complete": true,
+      "decision_and_support_correct": true,
+      "credits_spent": 8,
+      "requests": 7,
+      "citations": [
+        "D2"
+      ]
+    },
+    {
+      "case_id": "MFG-004",
+      "policy": "auditor-newbie-02",
+      "predicted_verdict": "insufficient",
+      "reference_verdict": "insufficient",
+      "verdict_correct": true,
+      "reference_support_complete": true,
+      "decision_and_support_correct": true,
+      "credits_spent": 8,
+      "requests": 7,
+      "citations": [
+        "D2",
+        "D4"
+      ]
+    },
+    {
+      "case_id": "MFG-005",
+      "policy": "auditor-newbie-02",
+      "predicted_verdict": "supported",
+      "reference_verdict": "supported",
+      "verdict_correct": true,
+      "reference_support_complete": true,
+      "decision_and_support_correct": true,
+      "credits_spent": 8,
+      "requests": 7,
+      "citations": [
+        "D2",
+        "D3",
+        "D7",
+        "D4",
+        "D5",
+        "D6"
+      ]
+    },
+    {
+      "case_id": "MFG-006",
+      "policy": "auditor-newbie-02",
+      "predicted_verdict": "contradicted",
+      "reference_verdict": "contradicted",
+      "verdict_correct": true,
+      "reference_support_complete": true,
+      "decision_and_support_correct": true,
+      "credits_spent": 8,
+      "requests": 7,
+      "citations": [
+        "D2",
+        "D7"
+      ]
+    },
+    {
+      "case_id": "MFG-007",
+      "policy": "auditor-newbie-02",
+      "predicted_verdict": "contradicted",
+      "reference_verdict": "contradicted",
+      "verdict_correct": true,
+      "reference_support_complete": true,
+      "decision_and_support_correct": true,
+      "credits_spent": 7,
+      "requests": 6,
+      "citations": [
+        "D2",
+        "D6"
+      ]
+    },
+    {
+      "case_id": "MFG-008",
+      "policy": "auditor-newbie-02",
+      "predicted_verdict": "insufficient",
+      "reference_verdict": "insufficient",
+      "verdict_correct": true,
+      "reference_support_complete": true,
+      "decision_and_support_correct": true,
+      "credits_spent": 8,
+      "requests": 7,
+      "citations": [
+        "D2",
+        "D4"
+      ]
+    }
+  ]
+}

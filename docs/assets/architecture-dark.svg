@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 560" width="980" height="560" role="img" aria-label="QA War Room architecture: browser pages talk only to a localhost server; records are released only on request; gold and the evaluator sit behind a boundary reached only after completion; live rooms make no model calls; API keys stay in a local git-ignored file.">
+<title>QA War Room architecture: browser pages talk only to a localhost server; records are released only on request; gold and the evaluator sit behind a boundary reached only after completion; live rooms make no model calls; API keys stay in a local git-ignored file.</title>
+<defs><marker id="a-line" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#93a79b"/></marker><marker id="a-accent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#3fc982"/></marker><marker id="a-warn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#f1c467"/></marker></defs>
+<rect x="20" y="40" width="214" height="316" rx="14" fill="#111915" stroke="#34463b" stroke-width="1.4"/>
+<text x="36" y="64" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#a9bcb1" text-anchor="start">BROWSER · THIS COMPUTER</text>
+<rect x="36" y="76" width="182" height="52" rx="10" fill="#18231d" stroke="#34463b" stroke-width="1.4"/>
+<text x="127.0" y="99.0" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="650" fill="#e4eee8" text-anchor="middle">Live chat  /</text>
+<text x="127.0" y="117.0" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#a9bcb1" text-anchor="middle">LINE-style room</text>
+<rect x="36" y="142" width="182" height="52" rx="10" fill="#18231d" stroke="#34463b" stroke-width="1.4"/>
+<text x="127.0" y="165.0" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="650" fill="#e4eee8" text-anchor="middle">Dashboard</text>
+<text x="127.0" y="183.0" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#a9bcb1" text-anchor="middle">real room counts</text>
+<rect x="36" y="208" width="182" height="52" rx="10" fill="#18231d" stroke="#34463b" stroke-width="1.4"/>
+<text x="127.0" y="231.0" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="650" fill="#e4eee8" text-anchor="middle">Manual desk</text>
+<text x="127.0" y="249.0" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#a9bcb1" text-anchor="middle">review by hand</text>
+<rect x="36" y="274" width="182" height="52" rx="10" fill="#18231d" stroke="#34463b" stroke-width="1.4"/>
+<text x="127.0" y="297.0" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="650" fill="#e4eee8" text-anchor="middle">AI settings</text>
+<text x="127.0" y="315.0" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#a9bcb1" text-anchor="middle">provider · key · model</text>
+<rect x="300" y="40" width="340" height="420" rx="14" fill="#111915" stroke="#34463b" stroke-width="1.4"/>
+<text x="316" y="64" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#a9bcb1" text-anchor="start">LOCAL SERVER · 127.0.0.1 ONLY</text>
+<rect x="350" y="76" width="270" height="58" rx="10" fill="#18231d" stroke="#34463b" stroke-width="1.4"/>
+<text x="485.0" y="102.0" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="650" fill="#e4eee8" text-anchor="middle">HTTP API</text>
+<text x="485.0" y="120.0" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#a9bcb1" text-anchor="middle">strict JSON · host / origin checks</text>
+<rect x="350" y="190" width="270" height="58" rx="10" fill="#16352a" stroke="#3fc982" stroke-width="1.4"/>
+<text x="485.0" y="216.0" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="650" fill="#e4eee8" text-anchor="middle">LiveRooms scheduler</text>
+<text x="485.0" y="234.0" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#a9bcb1" text-anchor="middle">rule-based roles · 0 model calls</text>
+<rect x="350" y="300" width="270" height="58" rx="10" fill="#18231d" stroke="#34463b" stroke-width="1.4"/>
+<text x="485.0" y="326.0" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="650" fill="#e4eee8" text-anchor="middle">SessionEngine</text>
+<text x="485.0" y="344.0" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#a9bcb1" text-anchor="middle">evidence budget · requests · decision</text>
+<rect x="350" y="392" width="270" height="52" rx="10" fill="#18231d" stroke="#34463b" stroke-width="1.4"/>
+<text x="485.0" y="415.0" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="650" fill="#e4eee8" text-anchor="middle">ProviderSettings</text>
+<text x="485.0" y="433.0" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#a9bcb1" text-anchor="middle">key saved locally · never returned</text>
+<rect x="706" y="300" width="254" height="58" rx="10" fill="#18231d" stroke="#34463b" stroke-width="1.4"/>
+<text x="833.0" y="326.0" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="650" fill="#e4eee8" text-anchor="middle">Evidence register</text>
+<text x="833.0" y="344.0" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#a9bcb1" text-anchor="middle">a record is released only when requested</text>
+<rect x="690" y="150" width="286" height="110" rx="14" fill="#34290f" stroke="#8a6a22" stroke-width="1.4" stroke-dasharray="7 6"/>
+<text x="706" y="174" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#f1c467" text-anchor="start">EVALUATOR-ONLY BOUNDARY</text>
+<rect x="706" y="184" width="254" height="58" rx="10" fill="#18231d" stroke="#34463b" stroke-width="1.4"/>
+<text x="833.0" y="210.0" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="650" fill="#e4eee8" text-anchor="middle">Gold + evaluator</text>
+<text x="833.0" y="228.0" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#a9bcb1" text-anchor="middle">never in active observations</text>
+<rect x="706" y="392" width="254" height="52" rx="10" fill="#18231d" stroke="#34463b" stroke-width="1.4"/>
+<text x="833.0" y="415.0" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="650" fill="#e4eee8" text-anchor="middle">.qawr/provider-settings.json</text>
+<text x="833.0" y="433.0" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#a9bcb1" text-anchor="middle">git-ignored · masked in the UI</text>
+<rect x="706" y="478" width="254" height="52" rx="10" fill="#18231d" stroke="#34463b" stroke-width="1.4"/>
+<text x="833.0" y="501.0" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="650" fill="#e4eee8" text-anchor="middle">Provider endpoints</text>
+<text x="833.0" y="519.0" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#a9bcb1" text-anchor="middle">Typhoon · OpenRouter · Claude · GPT · Gemini</text>
+<path d="M218 102 L350 96" fill="none" stroke="#93a79b" stroke-width="1.6" marker-start="url(#a-line)" marker-end="url(#a-line)"/>
+<text x="284" y="91" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#a9bcb1" text-anchor="middle">polls · controls</text>
+<path d="M218 168 L350 112" fill="none" stroke="#93a79b" stroke-width="1.6" marker-end="url(#a-line)"/>
+<text x="270" y="147" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#a9bcb1" text-anchor="middle">reads counts</text>
+<path d="M218 234 L350 126" fill="none" stroke="#93a79b" stroke-width="1.6" marker-end="url(#a-line)"/>
+<text x="272" y="200" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#a9bcb1" text-anchor="middle">manual session</text>
+<path d="M218 300 C 290 300, 290 418, 350 418" fill="none" stroke="#93a79b" stroke-width="1.6" marker-end="url(#a-line)"/>
+<text x="264" y="372" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#a9bcb1" text-anchor="middle">/api/settings</text>
+<path d="M485 134 L485 190" fill="none" stroke="#93a79b" stroke-width="1.6" marker-end="url(#a-line)"/>
+<text x="476" y="166" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#a9bcb1" text-anchor="end">pause · resume · stop · note</text>
+<path d="M485 248 L485 300" fill="none" stroke="#93a79b" stroke-width="1.6" marker-end="url(#a-line)"/>
+<text x="476" y="278" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#a9bcb1" text-anchor="end">request · review · decide</text>
+<path d="M620 329 L706 329" fill="none" stroke="#93a79b" stroke-width="1.6" marker-end="url(#a-line)"/>
+<text x="663" y="320" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#a9bcb1" text-anchor="middle">release</text>
+<path d="M620 312 C 660 312, 666 226, 706 222" fill="none" stroke="#f1c467" stroke-width="1.6" marker-end="url(#a-warn)"/>
+<text x="640" y="276" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#f1c467" text-anchor="start">completed only</text>
+<path d="M706 200 C 660 196, 660 118, 620 112" fill="none" stroke="#f1c467" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#a-warn)"/>
+<text x="668" y="138" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#f1c467" text-anchor="start">debrief</text>
+<path d="M620 412 L706 412" fill="none" stroke="#93a79b" stroke-width="1.6" marker-end="url(#a-line)"/>
+<text x="663" y="404" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#a9bcb1" text-anchor="middle">writes key</text>
+<path d="M620 430 C 660 430, 666 504, 706 504" fill="none" stroke="#93a79b" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#a-line)"/>
+<text x="650" y="482" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#a9bcb1" text-anchor="end">Test only</text>
+<text x="833" y="548" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#a9bcb1" text-anchor="middle">free model-list / key check · no prompts sent</text>
+</svg>

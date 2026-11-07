@@ -1,0 +1,4 @@
+# Keep LF everywhere: research locks hash source bytes, so checkouts must match.
+* text=auto eol=lf
+*.png binary
+*.svg text eol=lf

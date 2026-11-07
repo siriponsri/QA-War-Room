@@ -1,0 +1,24 @@
+{
+  "schema": "qawr-g6-claims-v1",
+  "scientific_results": "NOT_RUN",
+  "claims": [
+    {"id": "C01", "fact_key": "pack_cases", "scope": "engineering_or_gate_status", "section": "2.2", "interpretation": "Original constructed case count, not reviewed reference validity"},
+    {"id": "C02", "fact_key": "pack_families", "scope": "engineering_or_gate_status", "section": "2.2", "interpretation": "Construction families, not independent manufacturing sites"},
+    {"id": "C03", "fact_key": "dev_jobs", "scope": "engineering_or_gate_status", "section": "3.2", "interpretation": "Frozen engineering jobs, not independent samples"},
+    {"id": "C04", "fact_key": "dev_transitions", "scope": "engineering_or_gate_status", "section": "3.2", "interpretation": "Replayed software transitions"},
+    {"id": "C05", "fact_key": "cap_pending", "scope": "engineering_or_gate_status", "section": "3.2", "interpretation": "Retained unstarted engineering jobs"},
+    {"id": "C06", "fact_key": "independent_review", "scope": "engineering_or_gate_status", "section": "2.2", "interpretation": "Actual review not performed"},
+    {"id": "C07", "fact_key": "adjudication", "scope": "engineering_or_gate_status", "section": "2.2", "interpretation": "Actual adjudication not performed"},
+    {"id": "C08", "fact_key": "scientific_results", "scope": "engineering_or_gate_status", "section": "3.1", "interpretation": "Confirmatory analysis not run"},
+    {"id": "C09", "fact_key": "cost_usd", "scope": "engineering_or_gate_status", "section": "3.2", "interpretation": "No paid API use in this offline preparation"},
+    {"id": "C10", "fact_key": "dev_cases", "scope": "engineering_or_gate_status", "section": "3.2", "interpretation": "Synthetic development case count"},
+    {"id": "C11", "fact_key": "dev_families", "scope": "engineering_or_gate_status", "section": "3.2", "interpretation": "Synthetic development construction groups"},
+    {"id": "C12", "fact_key": "dev_terminal", "scope": "engineering_or_gate_status", "section": "3.2", "interpretation": "Terminal engineering jobs"},
+    {"id": "C13", "fact_key": "dev_pending", "scope": "engineering_or_gate_status", "section": "3.2", "interpretation": "Unfinished engineering jobs"},
+    {"id": "C14", "fact_key": "dev_submissions", "scope": "engineering_or_gate_status", "section": "3.2", "interpretation": "Valid scripted submissions, not model performance"},
+    {"id": "C15", "fact_key": "dev_abstentions", "scope": "engineering_or_gate_status", "section": "3.2", "interpretation": "Explicit scripted abstentions"},
+    {"id": "C16", "fact_key": "dev_tables", "scope": "engineering_or_gate_status", "section": "3.2", "interpretation": "Generated descriptive method/budget tables"},
+    {"id": "C17", "fact_key": "cap_actions", "scope": "engineering_or_gate_status", "section": "3.2", "interpretation": "Actual policy calls in capped run"},
+    {"id": "C18", "fact_key": "reference_lock", "scope": "engineering_or_gate_status", "section": "2.2", "interpretation": "Reviewed reference is not locked"}
+  ]
+}

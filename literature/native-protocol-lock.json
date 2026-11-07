@@ -1,0 +1,33 @@
+{
+  "purpose": "Reference inspection only. Never execute downloaded source. Third-party files stay ignored.",
+  "files": [
+    {
+      "id": "drugqa_prompt",
+      "file": "drugqa_prompt.txt",
+      "url": "https://raw.githubusercontent.com/DodgeLU/Sino-US-DrugQA/cd026a27a5e039863de9080b8d7d95acaf1f5a39/evaluation/prompt.txt",
+      "sha256": "3c9ada596fa3b0b9c463ce0ed48f3554994a399b06d9cdbdb1f6d3712570fa7c",
+      "bytes": 512
+    },
+    {
+      "id": "drugqa_parser",
+      "file": "drugqa_parser.txt",
+      "url": "https://raw.githubusercontent.com/DodgeLU/Sino-US-DrugQA/cd026a27a5e039863de9080b8d7d95acaf1f5a39/evaluation/common.py",
+      "sha256": "3954704489fcd07b08773f0125c01b3ed0e4267d859010e2d47b597d0748a50d",
+      "bytes": 8936
+    },
+    {
+      "id": "drugqa_scorer",
+      "file": "drugqa_scorer.txt",
+      "url": "https://raw.githubusercontent.com/DodgeLU/Sino-US-DrugQA/cd026a27a5e039863de9080b8d7d95acaf1f5a39/analysis/score_results.py",
+      "sha256": "f6a7fc532226e2123c9cea7d2c886b60e632f891c8bf64682abb4dc40658c5ad",
+      "bytes": 5447
+    },
+    {
+      "id": "contractnli_metrics",
+      "file": "contractnli_metrics.txt",
+      "url": "https://raw.githubusercontent.com/stanfordnlp/contract-nli-bert/058c56fd62d56897bb4fcfbf1be71b17aee3a79c/contract_nli/evaluation.py",
+      "sha256": "f5acd4497e002652b2f29a6827fecd355b96ec041c4c174b1938eea2f8c42cf4",
+      "bytes": 15025
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Phum, investigator (fictional character)">
+  <title>Phum, investigator (fictional character)</title>
+  <defs><clipPath id="qawr-ch-phum"><circle cx="48" cy="48" r="48"/></clipPath></defs>
+  <g clip-path="url(#qawr-ch-phum)">
+  <rect width="96" height="96" fill="#d6f0df"/>
+  <path d="M12 96c1.5-17 15.5-28 36-28s34.5 11 36 28z" fill="#0a7a43"/>
+  <path d="M39 67.5l9 12.5 9-12.5-4-1.5-5 7-5-7z" fill="#ffffff"/>
+  <path d="M39 67.5L48 80 37 96H26l2-20z" fill="#086637"/>
+  <path d="M57 67.5L48 80l11 16h11l-2-20z" fill="#086637"/>
+  <rect x="43.5" y="54" width="9" height="13" rx="4" fill="#e3a97f"/>
+  
+  <ellipse cx="31.5" cy="42" rx="3.4" ry="4.4" fill="#f2c7a2"/>
+  <ellipse cx="64.5" cy="42" rx="3.4" ry="4.4" fill="#f2c7a2"/>
+  <ellipse cx="48" cy="40" rx="16.5" ry="18.5" fill="#f2c7a2"/>
+  <g class="ch-eyes">
+    <ellipse cx="41.5" cy="41.5" rx="2.1" ry="2.5" fill="#2a1d18"/>
+    <ellipse cx="54.5" cy="41.5" rx="2.1" ry="2.5" fill="#2a1d18"/>
+    <circle cx="42.2" cy="40.6" r=".7" fill="#fff"/>
+    <circle cx="55.2" cy="40.6" r=".7" fill="#fff"/>
+  </g>
+  <circle cx="37.5" cy="47.5" r="2.6" fill="#f19a8c" opacity=".45"/>
+  <circle cx="58.5" cy="47.5" r="2.6" fill="#f19a8c" opacity=".45"/><path d="M37 34.6q4.2-1.6 8.6-.2M50.4 34.4q4.4-1.4 8.6.2" fill="none" stroke="#24242c" stroke-width="2" stroke-linecap="round"/>
+  <path class="ch-mouth" d="M44 49.5q4 3.2 8 0" fill="none" stroke="#2a1d18" stroke-width="1.9" stroke-linecap="round"/>
+  <g class="ch-mouth-open" opacity="0">
+    <ellipse cx="48" cy="50.6" rx="3.6" ry="2.9" fill="#7a2c22"/>
+    <ellipse cx="48" cy="52" rx="2.2" ry="1.1" fill="#e77b6e"/>
+  </g>
+  <path d="M31 39c-1.5-13.5 7-22.5 18-22.5 10.5 0 18.5 8 17 21-3-5.5-8.5-8.5-15.5-8.5-8.5 0-15.5 3.5-19.5 10z" fill="#24242c"/>
+  <circle cx="41.5" cy="41.5" r="5.6" fill="none" stroke="#173b2b" stroke-width="1.8"/>
+  <circle cx="54.5" cy="41.5" r="5.6" fill="none" stroke="#173b2b" stroke-width="1.8"/>
+  <path d="M47.1 41.2h1.8" stroke="#173b2b" stroke-width="1.8"/>
+  <circle cx="66" cy="82" r="6" fill="#ffffff"/>
+  <circle cx="65.2" cy="81.2" r="2.6" fill="none" stroke="#0a7a43" stroke-width="1.6"/>
+  <path d="M67.2 83.2l2.2 2.2" stroke="#0a7a43" stroke-width="1.8" stroke-linecap="round"/>
+  </g>
+</svg>

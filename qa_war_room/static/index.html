@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="QA War Room — an offline, synthetic manufacturing evidence simulator.">
+  <title>QA War Room · Evidence workspace</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/styles.css">
+  <script defer src="/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#workspace">Skip to investigation</a>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Workspace navigation">
+      <a class="brand" href="/" aria-label="QA War Room home">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M5 8 16 2l11 6v16l-11 6-11-6Z"/><path d="m10 12 6 3 6-3M16 15v8M10 12v7l6 4 6-4v-7"/></svg></span>
+        <span>QA WAR ROOM<small>FOLLOW THE EVIDENCE</small></span>
+      </a>
+      <p class="nav-label">Workspace</p>
+      <nav class="nav-list">
+        <a href="#workspace" class="nav-item is-current"><span aria-hidden="true">◈</span> Evidence room <span class="nav-tag">01</span></a>
+        <a href="#case-setup" class="nav-item"><span aria-hidden="true">▤</span> Case selection</a>
+        <a href="#activity" class="nav-item"><span aria-hidden="true">↳</span> Session trail</a>
+      </nav>
+      <div class="sidebar-divider"></div>
+      <div class="roles-heading"><p class="nav-label">Role roster</p><span class="tiny-label">SCRIPTED</span></div>
+      <div id="role-list" class="role-list" aria-label="Simulation roles"><p class="sidebar-note">Loading role roster…</p></div>
+      <p class="sidebar-note">Role names describe simulator policies. They do not establish professional expertise.</p>
+      <div class="sidebar-footer">
+        <span class="connection"><span class="status-dot"></span> LOCAL WORKSPACE</span>
+        <p>Starter edition <span>v0.1</span><br>No model connection required.</p>
+      </div>
+    </aside>
+
+    <main id="workspace" class="main-content">
+      <header class="topbar">
+        <span class="breadcrumb">Manufacturing GMP <span aria-hidden="true">/</span> Evidence sufficiency</span>
+        <span class="environment-badge"><span class="status-dot"></span> OFFLINE DEMO</span>
+      </header>
+
+      <section class="hero" aria-labelledby="page-title">
+        <div><p class="eyebrow">DEVIATION → CAPA → EFFECTIVENESS</p><h1 id="page-title">Follow the evidence.</h1><p class="hero-description">Investigate a closure claim. Request the records. Make a decision you can support.</p></div>
+        <div class="hero-stamp" aria-hidden="true"><span>QW</span><small>QUALITY SYSTEMS<br>SIMULATION LAB</small></div>
+      </section>
+
+      <div class="notice"><span class="notice-icon" aria-hidden="true">i</span><p><strong>Synthetic manufacturing case · Offline demo · Not a GMP compliance decision.</strong><br>These authored examples test the software workflow. They are not a validated pharmaceutical benchmark.</p></div>
+      <div id="message" class="message" role="status" aria-live="polite" hidden></div>
+
+      <section class="overview-grid" aria-label="Session setup and status">
+        <form id="case-setup" class="card setup-card">
+          <div class="section-heading"><h2>Open a case</h2><span class="section-index">01</span></div>
+          <label for="case-select">Manufacturing scenario</label>
+          <select id="case-select" name="case_id" required><option value="">Loading cases…</option></select>
+          <div class="setup-bottom"><div class="role-control"><label for="role-select">Auditor policy</label><select id="role-select" name="auditor_role"><option value="auditor-newbie-01">auditor-newbie-01</option><option value="auditor-newbie-02">auditor-newbie-02</option><option value="auditor-expert-01">auditor-expert-01</option><option value="auditor-expert-02">auditor-expert-02</option></select></div><button id="start-button" class="button button-primary" type="submit" disabled>Start session <span aria-hidden="true">↗</span></button></div>
+          <p id="case-brief" class="field-hint">Select a case to see its investigation brief.</p>
+        </form>
+        <section class="card budget-card" aria-labelledby="budget-title">
+          <div class="section-heading"><h2 id="budget-title">Request budget</h2><span class="small-icon" aria-hidden="true">◷</span></div>
+          <p class="budget-number"><span id="budget-remaining">—</span><small> / <span id="budget-total">—</span> units left</small></p>
+          <div class="meter" role="progressbar" id="budget-meter" aria-label="Evidence request budget spent" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="budget-fill"></span></div>
+          <p id="budget-description" class="field-hint">Each first request consumes the listed cost.</p>
+        </section>
+        <section class="card session-card" aria-labelledby="session-title">
+          <div class="section-heading"><h2 id="session-title">Session</h2><span id="session-status" class="badge badge-neutral">NOT STARTED</span></div>
+          <p id="session-short-id" class="session-id">Ready when you are.</p>
+          <p id="session-as-of" class="field-hint">Case dates and records are fictional.</p>
+          <p id="session-doc-count" class="document-count"><strong>0</strong> records returned</p>
+        </section>
+      </section>
+
+      <section class="claim-strip" aria-label="Claim under investigation"><span class="eyebrow">CLAIM TO ASSESS</span><p id="case-claim">Choose a scenario and start a session to inspect its evidence.</p></section>
+
+      <ol class="phase-strip" aria-label="Investigation stages"><li id="phase-brief" class="phase is-active"><span>01</span> Read the brief</li><li id="phase-evidence" class="phase"><span>02</span> Request evidence</li><li id="phase-decision" class="phase"><span>03</span> Assess the claim</li><li id="phase-debrief" class="phase"><span>04</span> Review the result</li></ol>
+
+      <div class="workspace-grid">
+        <section class="card evidence-panel" aria-labelledby="evidence-title">
+          <div class="panel-heading"><div><p class="eyebrow">INVESTIGATION DESK</p><h2 id="evidence-title">Evidence register <span id="catalog-count" class="count-label">0</span></h2></div><span id="requested-count" class="quiet-label">No active session</span></div>
+          <p class="panel-intro">Record descriptions are visible. Contents become available only after a request.</p>
+          <div id="evidence-catalog" class="evidence-catalog"><div class="empty-state"><span class="empty-icon" aria-hidden="true">▤</span><h3>Your investigation starts here.</h3><p>Open a case above to see which records you can request.</p></div></div>
+          <section id="document-reader" class="document-reader" aria-labelledby="reader-title">
+            <div class="reader-heading"><div><p class="eyebrow" id="reader-code">DOCUMENT VIEWER</p><h3 id="reader-title">No record selected</h3></div><span id="reader-badge" class="badge badge-neutral">EVIDENCE</span></div>
+            <div id="reader-metadata" class="reader-metadata" hidden></div>
+            <p id="reader-empty" class="reader-empty">Request a record, then read its contents here. A document title alone is not evidence for a verdict.</p>
+            <pre id="reader-content" class="document-content" hidden></pre>
+          </section>
+        </section>
+
+        <aside class="decision-column" aria-label="Decision and debrief">
+          <section class="card decision-panel" aria-labelledby="decision-title">
+            <div class="panel-heading"><div><p class="eyebrow">AUDITOR DESK</p><h2 id="decision-title">Assess the claim</h2></div><span class="section-index">03</span></div>
+            <p class="panel-intro">Judge this specific claim using the evidence you have obtained.</p>
+            <form id="decision-form">
+              <fieldset id="decision-fields" disabled>
+                <legend class="sr-only">Choose a verdict</legend>
+                <label class="verdict-option"><input type="radio" name="verdict" value="supported" required><span><strong>Supported</strong><small>The retrieved evidence supports the claim.</small></span><span class="verdict-symbol support" aria-hidden="true">✓</span></label>
+                <label class="verdict-option"><input type="radio" name="verdict" value="contradicted"><span><strong>Contradicted</strong><small>The retrieved evidence refutes the claim.</small></span><span class="verdict-symbol contradict" aria-hidden="true">×</span></label>
+                <label class="verdict-option"><input type="radio" name="verdict" value="insufficient"><span><strong>Insufficient evidence</strong><small>The records do not justify either conclusion.</small></span><span class="verdict-symbol unknown" aria-hidden="true">?</span></label>
+                <div class="citation-section"><h3>Cite retrieved records</h3><p class="field-hint">Select only records that support your reasoning.</p><div id="citation-list" class="citation-list"><p class="citation-empty">No records retrieved yet.</p></div></div>
+                <label for="rationale">Reasoning note</label><textarea id="rationale" name="rationale" rows="4" maxlength="4000" placeholder="Which fact, date, or scope supports your decision? What remains uncertain?" required></textarea>
+                <button id="decide-button" type="submit" class="button button-primary full-width">Finalize &amp; debrief <span aria-hidden="true">→</span></button>
+                <p class="field-hint">Finalizing ends this session and reveals its authored reference answer.</p>
+              </fieldset>
+            </form>
+            <div class="scripted-controls"><button id="step-button" type="button" class="button button-secondary full-width" disabled><span aria-hidden="true">▷</span> Take one scripted step</button><p class="field-hint">Uses the selected offline policy and the same budget. You can continue manually after any step.</p></div>
+          </section>
+          <section id="debrief-panel" class="card debrief-panel" aria-labelledby="debrief-title" hidden>
+            <div class="panel-heading"><div><p class="eyebrow">REFERENCE COMPARISON</p><h2 id="debrief-title">Session debrief</h2></div><span class="section-index">04</span></div>
+            <div id="debrief-metrics" class="debrief-metrics"></div>
+            <div id="debrief-details" class="debrief-details"></div>
+            <div class="report-actions"><a id="report-markdown" class="button button-secondary" download>↓ Markdown report</a><a id="report-json" class="text-link" download>JSON</a></div>
+          </section>
+        </aside>
+      </div>
+
+      <section id="activity" class="card activity-panel" aria-labelledby="activity-title"><div class="panel-heading"><div><p class="eyebrow">TRACEABLE BY DESIGN</p><h2 id="activity-title">Session trail</h2></div><span id="event-count" class="quiet-label">0 events</span></div><ol id="event-list" class="event-list"><li class="empty-log">Evidence requests and decisions will appear here.</li></ol></section>
+      <footer class="footer"><p>Built around one question: <strong>what evidence would change the decision?</strong></p><span>QA WAR ROOM / STARTER</span></footer>
+    </main>
+  </div>
+</body>
+</html>

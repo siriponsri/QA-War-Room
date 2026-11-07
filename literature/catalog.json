@@ -1,0 +1,383 @@
+{
+  "version": "0.1.0",
+  "searched_through": "2026-11-07",
+  "scope": "Manufacturing GMP deviation/CAPA evidence sufficiency; targeted narrative review, not systematic review",
+  "papers": [
+    {
+      "id": "P01",
+      "title": "Can Foundational Large Language Models Assist with Conducting Pharmaceuticals Manufacturing Investigations?",
+      "authors": "Salami, Hossein and Smith-Goettler, Brandye and Yadav, Vijay",
+      "year": 2024,
+      "venue": "arXiv preprint (check later journal version)",
+      "landing_url": "https://arxiv.org/abs/2404.15578",
+      "pdf_urls": [
+        "https://arxiv.org/pdf/2404.15578"
+      ],
+      "category": "pharma-primary",
+      "purpose": "Closest manufacturing-investigation predecessor; extraction and historical deviation retrieval.",
+      "license_note": "arXiv author manuscript; reuse license must be checked",
+      "review_status": "targeted review; see LITERATURE_REVIEW.md",
+      "public_repo_pdf_redistribution": false,
+      "downloaded_version": "Author-hosted/arXiv manuscript; final publication may differ"
+    },
+    {
+      "id": "P02",
+      "title": "Retrieval Augmented Generation (RAG) for Evaluating Regulatory Compliance of Drug Information and Clinical Trial Protocols",
+      "authors": "Waikar, Shreyas and Bhat, Amruta Gajanan and Ramanathan, Murali",
+      "year": 2026,
+      "venue": "CPT: Pharmacometrics & Systems Pharmacology",
+      "landing_url": "https://doi.org/10.1002/psp4.70201",
+      "pdf_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12917324/pdf/PSP4-15-e70201.pdf",
+        "https://ascpt.onlinelibrary.wiley.com/doi/pdfdirect/10.1002/psp4.70201",
+        "https://europepmc.org/articles/PMC12917324?pdf=render"
+      ],
+      "category": "pharma-primary",
+      "purpose": "Pharmaceutical regulatory RAG precedent; different task from GMP evidence closure.",
+      "license_note": "CC BY 4.0 verified in article full text or publisher PDF",
+      "review_status": "targeted review; see LITERATURE_REVIEW.md",
+      "public_repo_pdf_redistribution": false,
+      "downloaded_version": "Publisher or proceedings PDF if downloaded"
+    },
+    {
+      "id": "P03",
+      "title": "Integrating Artificial Intelligence in Quality Audits of Oral Solid Dosage Manufacturing Facilities",
+      "authors": "Narayanan, Jayaprakash J. and Dhanabal, S. P. and Nalin, D. and Karri, Veera Venkata Satyanarayana Reddy",
+      "year": 2026,
+      "venue": "International Journal of Applied Pharmaceutics",
+      "landing_url": "https://doi.org/10.22159/ijap.2026v18i2.57414",
+      "pdf_urls": [
+        "https://journals.innovareacademics.in/index.php/ijap/article/download/57414/33426"
+      ],
+      "category": "pharma-primary",
+      "purpose": "Direct GMP audit prior art (WinAI); reported pilot results are not independently reproduced.",
+      "license_note": "CC BY 4.0 verified in article full text or publisher PDF",
+      "review_status": "targeted review; see LITERATURE_REVIEW.md",
+      "public_repo_pdf_redistribution": false,
+      "downloaded_version": "Publisher or proceedings PDF if downloaded"
+    },
+    {
+      "id": "P04",
+      "title": "Sino-US-DrugQA: A benchmark for evaluating large language models in cross-jurisdictional pharmaceutical regulation",
+      "authors": "Fu, Xuejing and Chen, Zhen and Lu, Wentao",
+      "year": 2026,
+      "venue": "PLOS ONE",
+      "landing_url": "https://doi.org/10.1371/journal.pone.0343858",
+      "pdf_urls": [
+        "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0343858&type=printable"
+      ],
+      "category": "open-benchmark",
+      "purpose": "Pharmaceutical regulatory knowledge anchor; MCQ accuracy is not evidence audit performance.",
+      "license_note": "CC BY 4.0",
+      "review_status": "targeted review; see LITERATURE_REVIEW.md",
+      "public_repo_pdf_redistribution": false,
+      "downloaded_version": "Publisher or proceedings PDF if downloaded"
+    },
+    {
+      "id": "P05",
+      "title": "ContractNLI: A Dataset for Document-level Natural Language Inference for Contracts",
+      "authors": "Koreeda, Yuta and Manning, Christopher",
+      "year": 2021,
+      "venue": "Findings of EMNLP",
+      "landing_url": "https://aclanthology.org/2021.findings-emnlp.164/",
+      "pdf_urls": [
+        "https://aclanthology.org/2021.findings-emnlp.164.pdf"
+      ],
+      "category": "open-benchmark",
+      "purpose": "Document-level entailment, contradiction, neutral labels with supporting spans.",
+      "license_note": "ACL publication terms; data CC BY 4.0 separately",
+      "review_status": "targeted review; see LITERATURE_REVIEW.md",
+      "public_repo_pdf_redistribution": false,
+      "downloaded_version": "Publisher or proceedings PDF if downloaded"
+    },
+    {
+      "id": "P06",
+      "title": "Fact or Fiction: Verifying Scientific Claims",
+      "authors": "Wadden, David and others",
+      "year": 2020,
+      "venue": "EMNLP",
+      "landing_url": "https://aclanthology.org/2020.emnlp-main.609/",
+      "pdf_urls": [
+        "https://aclanthology.org/2020.emnlp-main.609.pdf"
+      ],
+      "category": "open-benchmark",
+      "purpose": "Evidence sets and scientific claim verification; preserve original label semantics.",
+      "license_note": "ACL publication terms; claims/evidence CC BY 4.0 and corpus ODC-By separately",
+      "review_status": "targeted review; see LITERATURE_REVIEW.md",
+      "public_repo_pdf_redistribution": false,
+      "downloaded_version": "Publisher or proceedings PDF if downloaded"
+    },
+    {
+      "id": "P07",
+      "title": "COMPACT: Building Compliance Paralegals via Clause Graph Reasoning over Contracts",
+      "authors": "Singh, Ayush and Aggarwal, Dishank and Bhagat, Pranav and Khan, Ainulla and Malik, Sameer and Azad, Amar Prakash",
+      "year": 2026,
+      "venue": "EACL",
+      "landing_url": "https://aclanthology.org/2026.eacl-long.377/",
+      "pdf_urls": [
+        "https://aclanthology.org/2026.eacl-long.377.pdf"
+      ],
+      "category": "open-benchmark",
+      "purpose": "Cross-clause reasoning and ACE; overlaps ContractNLI source contracts.",
+      "license_note": "ACL publication terms; dataset CC BY 4.0 subject to upstream terms",
+      "review_status": "targeted review; see LITERATURE_REVIEW.md",
+      "public_repo_pdf_redistribution": false,
+      "downloaded_version": "Publisher or proceedings PDF if downloaded"
+    },
+    {
+      "id": "P08",
+      "title": "IntelliAudit: Using Large Language Models to Evaluate Audit Controls",
+      "authors": "Wilson, Allison and Sabet, Sina Moradi and Shakimov, Diar and Shahrivar, Panteha and Bagheri, Mohammad Reza and Konenkamp, Dean and Tayebi, Mohammad A.",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "landing_url": "https://arxiv.org/abs/2608.07688",
+      "pdf_urls": [
+        "https://arxiv.org/pdf/2608.07688"
+      ],
+      "category": "audit-prior-art",
+      "purpose": "Audit evidence sufficiency, auditor/defender/judge; not a verified gold benchmark.",
+      "license_note": "arXiv author manuscript; code AGPL-3.0 is not paper/data license",
+      "review_status": "targeted review; see LITERATURE_REVIEW.md",
+      "public_repo_pdf_redistribution": false,
+      "downloaded_version": "Author-hosted/arXiv manuscript; final publication may differ"
+    },
+    {
+      "id": "P09",
+      "title": "Smart Audit System Empowered by LLM",
+      "authors": "Yao, Xu and Wu, Xiaoxu and Li, Xi and Xu, Huan and Li, Chenlei and Huang, Ping and Li, Si and Ma, Xiaoning and Shan, Jiulong",
+      "year": 2024,
+      "venue": "arXiv preprint / Apple research",
+      "landing_url": "https://machinelearning.apple.com/research/smart-audit",
+      "pdf_urls": [
+        "https://arxiv.org/pdf/2410.07677"
+      ],
+      "category": "audit-prior-art",
+      "purpose": "Manufacturing smart-audit workflow and risk-based information gathering.",
+      "license_note": "arXiv author manuscript; reuse license pending",
+      "review_status": "targeted review; see LITERATURE_REVIEW.md",
+      "public_repo_pdf_redistribution": false,
+      "downloaded_version": "Author-hosted/arXiv manuscript; final publication may differ"
+    },
+    {
+      "id": "P10",
+      "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+      "authors": "Lewis, Patrick and others",
+      "year": 2020,
+      "venue": "NeurIPS",
+      "landing_url": "https://arxiv.org/abs/2005.11401",
+      "pdf_urls": [
+        "https://arxiv.org/pdf/2005.11401"
+      ],
+      "category": "method",
+      "purpose": "Grounded retrieval baseline; not by itself evidence sufficiency.",
+      "license_note": "arXiv manuscript; consult original terms",
+      "review_status": "targeted review; see LITERATURE_REVIEW.md",
+      "public_repo_pdf_redistribution": false,
+      "downloaded_version": "Author-hosted/arXiv manuscript; final publication may differ"
+    },
+    {
+      "id": "P11",
+      "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+      "authors": "Yao, Shunyu and others",
+      "year": 2023,
+      "venue": "ICLR",
+      "landing_url": "https://arxiv.org/abs/2210.03629",
+      "pdf_urls": [
+        "https://arxiv.org/pdf/2210.03629"
+      ],
+      "category": "method",
+      "purpose": "Sequential tool use baseline; keep concise auditable actions, no hidden reasoning logs required.",
+      "license_note": "arXiv manuscript; consult original terms",
+      "review_status": "targeted review; see LITERATURE_REVIEW.md",
+      "public_repo_pdf_redistribution": false,
+      "downloaded_version": "Author-hosted/arXiv manuscript; final publication may differ"
+    },
+    {
+      "id": "P12",
+      "title": "Enabling Large Language Models to Generate Text with Citations",
+      "authors": "Gao, Tianyu and Yen, Howard and Yu, Jiatong and Chen, Danqi",
+      "year": 2023,
+      "venue": "EMNLP",
+      "landing_url": "https://aclanthology.org/2023.emnlp-main.398/",
+      "pdf_urls": [
+        "https://aclanthology.org/2023.emnlp-main.398.pdf"
+      ],
+      "category": "method",
+      "purpose": "ALCE: citation completeness and correctness distinguish grounding from citation presence.",
+      "license_note": "ACL publication terms",
+      "review_status": "targeted review; see LITERATURE_REVIEW.md",
+      "public_repo_pdf_redistribution": false,
+      "downloaded_version": "Publisher or proceedings PDF if downloaded"
+    },
+    {
+      "id": "P13",
+      "title": "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+      "authors": "Asai, Akari and others",
+      "year": 2024,
+      "venue": "ICLR",
+      "landing_url": "https://arxiv.org/abs/2310.11511",
+      "pdf_urls": [
+        "https://arxiv.org/pdf/2310.11511"
+      ],
+      "category": "method",
+      "purpose": "Adaptive retrieval and critique; use as method comparator, not pharma validation.",
+      "license_note": "arXiv manuscript; consult original terms",
+      "review_status": "targeted review; see LITERATURE_REVIEW.md",
+      "public_repo_pdf_redistribution": false,
+      "downloaded_version": "Author-hosted/arXiv manuscript; final publication may differ"
+    },
+    {
+      "id": "P14",
+      "title": "RAGTruth: A Hallucination Corpus for Developing Trustworthy Retrieval-Augmented Language Models",
+      "authors": "Niu, Cheng and others",
+      "year": 2024,
+      "venue": "ACL",
+      "landing_url": "https://arxiv.org/abs/2401.00396",
+      "pdf_urls": [
+        "https://arxiv.org/pdf/2401.00396"
+      ],
+      "category": "method",
+      "purpose": "Hallucination despite retrieved context; supports separate unsupported-claim metric.",
+      "license_note": "arXiv manuscript; dataset terms separate",
+      "review_status": "targeted review; see LITERATURE_REVIEW.md",
+      "public_repo_pdf_redistribution": false,
+      "downloaded_version": "Author-hosted/arXiv manuscript; final publication may differ"
+    },
+    {
+      "id": "P15",
+      "title": "Lost in the Middle: How Language Models Use Long Contexts",
+      "authors": "Liu, Nelson F. and others",
+      "year": 2024,
+      "venue": "Transactions of the Association for Computational Linguistics",
+      "landing_url": "https://arxiv.org/abs/2307.03172",
+      "pdf_urls": [
+        "https://arxiv.org/pdf/2307.03172"
+      ],
+      "category": "method",
+      "purpose": "Document position and long-context control experiments.",
+      "license_note": "arXiv manuscript; consult original terms",
+      "review_status": "targeted review; see LITERATURE_REVIEW.md",
+      "public_repo_pdf_redistribution": false,
+      "downloaded_version": "Author-hosted/arXiv manuscript; final publication may differ"
+    },
+    {
+      "id": "P16",
+      "title": "tau-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains",
+      "authors": "Yao, Shunyu and others",
+      "year": 2025,
+      "venue": "ICLR",
+      "landing_url": "https://arxiv.org/abs/2406.12045",
+      "pdf_urls": [
+        "https://arxiv.org/pdf/2406.12045"
+      ],
+      "category": "method",
+      "purpose": "State-based task evaluation, repeatability and user-agent interaction.",
+      "license_note": "arXiv manuscript; original code MIT",
+      "review_status": "targeted review; see LITERATURE_REVIEW.md",
+      "public_repo_pdf_redistribution": false,
+      "downloaded_version": "Author-hosted/arXiv manuscript; final publication may differ"
+    },
+    {
+      "id": "P17",
+      "title": "Generative Agents: Interactive Simulacra of Human Behavior",
+      "authors": "Park, Joon Sung and others",
+      "year": 2023,
+      "venue": "UIST",
+      "landing_url": "https://arxiv.org/abs/2304.03442",
+      "pdf_urls": [
+        "https://arxiv.org/pdf/2304.03442"
+      ],
+      "category": "role-simulation",
+      "purpose": "Roleplay architecture; believable behavior is not pharmaceutical competence.",
+      "license_note": "arXiv author manuscript; ACM version may differ",
+      "review_status": "targeted review; see LITERATURE_REVIEW.md",
+      "public_repo_pdf_redistribution": false,
+      "downloaded_version": "Author-hosted/arXiv manuscript; final publication may differ"
+    },
+    {
+      "id": "P18",
+      "title": "Deep reinforcement learning driven inspection and maintenance planning under incomplete information and constraints",
+      "authors": "Andriotis, C. P. and Papakonstantinou, K. G.",
+      "year": 2021,
+      "venue": "Reliability Engineering & System Safety",
+      "landing_url": "https://doi.org/10.1016/j.ress.2021.107551",
+      "pdf_urls": [
+        "https://arxiv.org/pdf/2007.01380"
+      ],
+      "category": "rl-later",
+      "purpose": "Constrained sequential inspection rationale; engineering inspection not GMP audit evidence.",
+      "license_note": "arXiv author manuscript; publisher version separate",
+      "review_status": "targeted review; see LITERATURE_REVIEW.md",
+      "public_repo_pdf_redistribution": false,
+      "downloaded_version": "Author-hosted/arXiv manuscript; final publication may differ"
+    },
+    {
+      "id": "P19",
+      "title": "SelectiveNet: A Deep Neural Network with an Integrated Reject Option",
+      "authors": "Geifman, Yonatan and El-Yaniv, Ran",
+      "year": 2019,
+      "venue": "ICML",
+      "landing_url": "https://proceedings.mlr.press/v97/geifman19a.html",
+      "pdf_urls": [
+        "https://proceedings.mlr.press/v97/geifman19a/geifman19a.pdf"
+      ],
+      "category": "method",
+      "purpose": "Selective prediction and risk/coverage design; not an LLM pharma method.",
+      "license_note": "PMLR publication terms",
+      "review_status": "targeted review; see LITERATURE_REVIEW.md",
+      "public_repo_pdf_redistribution": false,
+      "downloaded_version": "Publisher or proceedings PDF if downloaded"
+    },
+    {
+      "id": "P20",
+      "title": "Benchmarking large language models on safety risks in scientific laboratories",
+      "authors": "Zhou, Yujun and others",
+      "year": 2026,
+      "venue": "Nature Machine Intelligence",
+      "landing_url": "https://doi.org/10.1038/s42256-025-01152-1",
+      "pdf_urls": [
+        "https://arxiv.org/pdf/2410.14182"
+      ],
+      "category": "optional-domain",
+      "purpose": "LabSafety Bench is adjacent safety knowledge, not Manufacturing GMP audit gold.",
+      "license_note": "Author preprint downloaded; journal version and data licenses separate",
+      "review_status": "targeted review; see LITERATURE_REVIEW.md",
+      "public_repo_pdf_redistribution": false,
+      "downloaded_version": "Author preprint titled LabSafety Bench: Benchmarking LLMs on Safety Issues in Scientific Labs; PDF links to the cited Nature Machine Intelligence published version"
+    },
+    {
+      "id": "P21",
+      "title": "Large language models in healthcare quality management: a European perspective on process automation and compliance",
+      "authors": "Knott, Markus and Krebs, Markus and Kerscher, Alexander",
+      "year": 2026,
+      "venue": "Frontiers in Digital Health",
+      "landing_url": "https://doi.org/10.3389/fdgth.2026.1761641",
+      "pdf_urls": [
+        "https://www.frontiersin.org/journals/digital-health/articles/10.3389/fdgth.2026.1761641/pdf"
+      ],
+      "category": "context-review",
+      "purpose": "Quality-management review for context; indirect evidence, not product validation.",
+      "license_note": "CC BY 4.0 verified in article full text or publisher PDF",
+      "review_status": "targeted review; see LITERATURE_REVIEW.md",
+      "public_repo_pdf_redistribution": false,
+      "downloaded_version": "Publisher or proceedings PDF if downloaded"
+    },
+    {
+      "id": "P22",
+      "title": "RAGAS: Automated Evaluation of Retrieval Augmented Generation",
+      "authors": "Es, Shahul and James, Jithin and Espinosa-Anke, Luis and Schockaert, Steven",
+      "year": 2024,
+      "venue": "EACL System Demonstrations",
+      "landing_url": "https://aclanthology.org/2024.eacl-demo.16/",
+      "pdf_urls": [
+        "https://aclanthology.org/2024.eacl-demo.16.pdf"
+      ],
+      "category": "method",
+      "purpose": "Evaluation tooling reference; LLM-judge metrics cannot be the sole reference standard.",
+      "license_note": "ACL publication terms",
+      "review_status": "targeted review; see LITERATURE_REVIEW.md",
+      "public_repo_pdf_redistribution": false,
+      "downloaded_version": "Publisher or proceedings PDF if downloaded"
+    }
+  ]
+}

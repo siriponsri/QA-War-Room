@@ -1,0 +1,482 @@
+{
+  "report_schema_version": "0.1.0",
+  "mode": "offline_scripted_synthetic_demo",
+  "notice": "Training/simulation artifact only. Not a GMP determination, CAPA approval, or batch-release decision.",
+  "session_id": "qr_55574403d59a4b31ba87d0b5f25bedd2",
+  "case": {
+    "id": "MFG-003",
+    "title": "Blending CAPA evidence packet 003",
+    "brief": "Review a fictional CAPA packet for BL-02. The cover sheet marks closure; assess the actual records against the stated protocol and review cutoff.",
+    "claim": "As of 2026-07-31, CAPA-2026-014 meets every closure criterion explicitly specified in EC-014 revision 2 for line BL-02 and batches B210, B211, B212.",
+    "as_of": "2026-07-31",
+    "process": "Oral solid dose manufacturing / blending",
+    "protocol_id": "EC-014",
+    "simulation_notice": "All organizations, people, records and results are fictional. This case tests a local scenario protocol, not a legal or regulatory GMP determination."
+  },
+  "auditor_role": "auditor-expert-01",
+  "status": "completed",
+  "budget": {
+    "total": 8,
+    "spent": 7,
+    "remaining": 1
+  },
+  "catalog": [
+    {
+      "id": "D1",
+      "title": "Deviation and CAPA closure cover sheet",
+      "document_type": "closure_summary",
+      "owner": "user-02",
+      "revision": 1,
+      "date": "2026-07-22",
+      "cost": 1,
+      "requested": false
+    },
+    {
+      "id": "D2",
+      "title": "Approved CAPA closure and effectiveness protocol",
+      "document_type": "closure_protocol",
+      "owner": "user-02",
+      "revision": 2,
+      "date": "2026-06-01",
+      "cost": 1,
+      "requested": true
+    },
+    {
+      "id": "D3",
+      "title": "Manufacturing implementation record",
+      "document_type": "implementation_record",
+      "owner": "user-01",
+      "revision": 1,
+      "date": "2026-06-12",
+      "cost": 1,
+      "requested": true
+    },
+    {
+      "id": "D4",
+      "title": "Effectiveness verification report",
+      "document_type": "effectiveness_report",
+      "owner": "user-02",
+      "revision": 1,
+      "date": "2026-07-20",
+      "cost": 2,
+      "requested": true
+    },
+    {
+      "id": "D5",
+      "title": "Related deviation status review",
+      "document_type": "deviation_trend",
+      "owner": "user-02",
+      "revision": 1,
+      "date": "2026-07-31",
+      "cost": 1,
+      "requested": true
+    },
+    {
+      "id": "D6",
+      "title": "Current CAPA status register",
+      "document_type": "status_log",
+      "owner": "user-02",
+      "revision": 1,
+      "date": "2026-07-31",
+      "cost": 1,
+      "requested": true
+    },
+    {
+      "id": "D7",
+      "title": "Procedure training register",
+      "document_type": "training_record",
+      "owner": "user-01",
+      "revision": 1,
+      "date": "2026-07-31",
+      "cost": 1,
+      "requested": true
+    },
+    {
+      "id": "D8",
+      "title": "Utilities shift log",
+      "document_type": "shift_log",
+      "owner": "user-01",
+      "revision": 1,
+      "date": "2026-07-14",
+      "cost": 1,
+      "requested": false
+    }
+  ],
+  "evidence": [
+    {
+      "id": "D2",
+      "title": "Approved CAPA closure and effectiveness protocol",
+      "document_type": "closure_protocol",
+      "owner": "user-02",
+      "revision": 2,
+      "date": "2026-06-01",
+      "content": "FICTIONAL TRAINING RECORD\nApproved CAPA closure and effectiveness protocol | D2 | record revision 2 | issued 2026-06-01\nCustodian: user-02\n\nProtocol EC-014 revision 2 defines the complete local criteria for this exercise. Applicable CAPA: CAPA-2026-014. Scope: line BL-02; batches B210, B211, B212; window 2026-06-15 through 2026-07-15. The claim is assessed at the case's stated cutoff.\nClosure requires all of the following: (1) implementation completed on the specified line under SOP-BL-017 revision 4; (2) documented completion of this procedure revision by operators OP-17, OP-22, OP-31 before the cohort window; (3) an effectiveness report for this protocol revision covering the entire specified cohort, with at least 3 reviewed batches and no failed acceptance batches; (4) a complete current review with no unresolved related deviations; and (5) a complete current status register showing closed, not reopened. Record dates and completed reviews must be on or before the cutoff. A summary claim alone does not satisfy these criteria.",
+      "facts": {
+        "record_type": "closure_protocol",
+        "protocol_id": "EC-014",
+        "revision": 2,
+        "capa_id": "CAPA-2026-014",
+        "scope": {
+          "line": "BL-02",
+          "batch_ids": [
+            "B210",
+            "B211",
+            "B212"
+          ],
+          "window_start": "2026-06-15",
+          "window_end": "2026-07-15"
+        },
+        "required_procedure": {
+          "id": "SOP-BL-017",
+          "revision": 4
+        },
+        "required_operator_ids": [
+          "OP-17",
+          "OP-22",
+          "OP-31"
+        ],
+        "minimum_batches": 3,
+        "maximum_failed_batches": 0,
+        "maximum_unresolved_related_deviations": 0,
+        "closure_requires": [
+          "implementation_record",
+          "training_record",
+          "effectiveness_report",
+          "deviation_trend",
+          "status_log"
+        ]
+      }
+    },
+    {
+      "id": "D3",
+      "title": "Manufacturing implementation record",
+      "document_type": "implementation_record",
+      "owner": "user-01",
+      "revision": 1,
+      "date": "2026-06-12",
+      "content": "FICTIONAL TRAINING RECORD\nManufacturing implementation record | D3 | record revision 1 | issued 2026-06-12\nCustodian: user-01\n\nCAPA-2026-014: implementation status COMPLETED. Line BL-02; completed 2026-06-12. Controlled procedure SOP-BL-017 revision 4. Parameter changes and verification signatures are present in this fictional implementation record.",
+      "facts": {
+        "record_type": "implementation_record",
+        "capa_id": "CAPA-2026-014",
+        "line": "BL-02",
+        "status": "completed",
+        "completed_on": "2026-06-12",
+        "procedure": {
+          "id": "SOP-BL-017",
+          "revision": 4
+        }
+      }
+    },
+    {
+      "id": "D7",
+      "title": "Procedure training register",
+      "document_type": "training_record",
+      "owner": "user-01",
+      "revision": 1,
+      "date": "2026-07-31",
+      "content": "FICTIONAL TRAINING RECORD\nProcedure training register | D7 | record revision 1 | issued 2026-07-31\nCustodian: user-01\n\nComplete training register for CAPA-2026-014 as of 2026-07-31. Operators OP-17, OP-22, OP-31 completed SOP-BL-017 revision 4 on 2026-06-14. No additional revision training is recorded in this complete snapshot.",
+      "facts": {
+        "record_type": "training_record",
+        "capa_id": "CAPA-2026-014",
+        "procedure": {
+          "id": "SOP-BL-017",
+          "revision": 4
+        },
+        "operator_ids": [
+          "OP-17",
+          "OP-22",
+          "OP-31"
+        ],
+        "completed_on": "2026-06-14",
+        "as_of": "2026-07-31",
+        "register_complete": true
+      }
+    },
+    {
+      "id": "D5",
+      "title": "Related deviation status review",
+      "document_type": "deviation_trend",
+      "owner": "user-02",
+      "revision": 1,
+      "date": "2026-07-31",
+      "content": "FICTIONAL TRAINING RECORD\nRelated deviation status review | D5 | record revision 1 | issued 2026-07-31\nCustodian: user-02\n\nComplete related-deviation review for CAPA-2026-014, line BL-02, as of 2026-07-31. Unresolved related deviations: 0. This is a status review of registered investigations, not a substitute for the effectiveness report.",
+      "facts": {
+        "record_type": "deviation_trend",
+        "capa_id": "CAPA-2026-014",
+        "line": "BL-02",
+        "as_of": "2026-07-31",
+        "unresolved_related_deviations": 0,
+        "review_complete": true
+      }
+    },
+    {
+      "id": "D6",
+      "title": "Current CAPA status register",
+      "document_type": "status_log",
+      "owner": "user-02",
+      "revision": 1,
+      "date": "2026-07-31",
+      "content": "FICTIONAL TRAINING RECORD\nCurrent CAPA status register | D6 | record revision 1 | issued 2026-07-31\nCustodian: user-02\n\nComplete CAPA status register as of 2026-07-31. CAPA-2026-014 status: CLOSED, effective 2026-07-22. No later status change is recorded in this complete fictional snapshot.",
+      "facts": {
+        "record_type": "status_log",
+        "capa_id": "CAPA-2026-014",
+        "status": "closed",
+        "effective_date": "2026-07-22",
+        "as_of": "2026-07-31",
+        "register_complete": true
+      }
+    }
+  ],
+  "events": [
+    {
+      "seq": 1,
+      "type": "session_started",
+      "role": "auditor-expert-01",
+      "message": "Session started. Only requested records will be disclosed."
+    },
+    {
+      "seq": 2,
+      "type": "evidence_requested",
+      "role": "auditor-expert-01",
+      "message": "Requested D2; cost 1 credit(s).",
+      "evidence_id": "D2"
+    },
+    {
+      "seq": 3,
+      "type": "evidence_delivered",
+      "role": "user-02",
+      "message": "Provided Approved CAPA closure and effectiveness protocol.",
+      "evidence_id": "D2"
+    },
+    {
+      "seq": 4,
+      "type": "evidence_requested",
+      "role": "auditor-expert-01",
+      "message": "Requested D3; cost 1 credit(s).",
+      "evidence_id": "D3"
+    },
+    {
+      "seq": 5,
+      "type": "evidence_delivered",
+      "role": "user-01",
+      "message": "Provided Manufacturing implementation record.",
+      "evidence_id": "D3"
+    },
+    {
+      "seq": 6,
+      "type": "evidence_requested",
+      "role": "auditor-expert-01",
+      "message": "Requested D7; cost 1 credit(s).",
+      "evidence_id": "D7"
+    },
+    {
+      "seq": 7,
+      "type": "evidence_delivered",
+      "role": "user-01",
+      "message": "Provided Procedure training register.",
+      "evidence_id": "D7"
+    },
+    {
+      "seq": 8,
+      "type": "evidence_requested",
+      "role": "auditor-expert-01",
+      "message": "Requested D4; cost 2 credit(s).",
+      "evidence_id": "D4"
+    },
+    {
+      "seq": 9,
+      "type": "evidence_unavailable",
+      "role": "user-02",
+      "message": "No completed effectiveness verification report is present in this packet as of the review cutoff. The custodian cannot provide one. This response does not prove that no activity occurred outside this packet.",
+      "evidence_id": "D4"
+    },
+    {
+      "seq": 10,
+      "type": "evidence_requested",
+      "role": "auditor-expert-01",
+      "message": "Requested D5; cost 1 credit(s).",
+      "evidence_id": "D5"
+    },
+    {
+      "seq": 11,
+      "type": "evidence_delivered",
+      "role": "user-02",
+      "message": "Provided Related deviation status review.",
+      "evidence_id": "D5"
+    },
+    {
+      "seq": 12,
+      "type": "evidence_requested",
+      "role": "auditor-expert-01",
+      "message": "Requested D6; cost 1 credit(s).",
+      "evidence_id": "D6"
+    },
+    {
+      "seq": 13,
+      "type": "evidence_delivered",
+      "role": "user-02",
+      "message": "Provided Current CAPA status register.",
+      "evidence_id": "D6"
+    },
+    {
+      "seq": 14,
+      "type": "decision_submitted",
+      "role": "auditor-expert-01",
+      "message": "Submitted insufficient decision."
+    }
+  ],
+  "decision": {
+    "verdict": "insufficient",
+    "evidence_ids": [
+      "D2"
+    ],
+    "rationale": "A completed effectiveness report has not been obtained. Missing or out-of-scope evidence does not by itself establish manufacturing failure."
+  },
+  "feedback": {
+    "expected_verdict": "insufficient",
+    "verdict_correct": true,
+    "evidence_support_complete": true,
+    "decision_and_support_correct": true,
+    "unsupported_citations": [],
+    "citations_not_in_reference": [],
+    "missing_support": [],
+    "required_support_sets": [
+      [
+        "D2"
+      ]
+    ],
+    "requested_unavailable": [
+      "D4"
+    ],
+    "missing_unavailability_checks": [],
+    "explanation": "The protocol requires a completed effectiveness report. A request to its custodian confirms that the packet contains none at the cutoff. The available records therefore cannot establish the closure claim; missing evidence alone is not proof that manufacturing failed.",
+    "limitations": "Synthetic fixture feedback only. Evidence completeness is exact reference-set coverage, not a semantic entailment assessment. Extra contextual citations are not necessarily wrong. This does not establish GMP compliance, CAPA effectiveness in practice, or human learning gains."
+  },
+  "evidence_checklist": [
+    {
+      "id": "D1",
+      "title": "Deviation and CAPA closure cover sheet",
+      "document_type": "closure_summary",
+      "owner": "user-02",
+      "revision": 1,
+      "date": "2026-07-22",
+      "cost": 1,
+      "requested": false,
+      "outcome": "not_requested"
+    },
+    {
+      "id": "D2",
+      "title": "Approved CAPA closure and effectiveness protocol",
+      "document_type": "closure_protocol",
+      "owner": "user-02",
+      "revision": 2,
+      "date": "2026-06-01",
+      "cost": 1,
+      "requested": true,
+      "outcome": "received"
+    },
+    {
+      "id": "D3",
+      "title": "Manufacturing implementation record",
+      "document_type": "implementation_record",
+      "owner": "user-01",
+      "revision": 1,
+      "date": "2026-06-12",
+      "cost": 1,
+      "requested": true,
+      "outcome": "received"
+    },
+    {
+      "id": "D4",
+      "title": "Effectiveness verification report",
+      "document_type": "effectiveness_report",
+      "owner": "user-02",
+      "revision": 1,
+      "date": "2026-07-20",
+      "cost": 2,
+      "requested": true,
+      "outcome": "unavailable"
+    },
+    {
+      "id": "D5",
+      "title": "Related deviation status review",
+      "document_type": "deviation_trend",
+      "owner": "user-02",
+      "revision": 1,
+      "date": "2026-07-31",
+      "cost": 1,
+      "requested": true,
+      "outcome": "received"
+    },
+    {
+      "id": "D6",
+      "title": "Current CAPA status register",
+      "document_type": "status_log",
+      "owner": "user-02",
+      "revision": 1,
+      "date": "2026-07-31",
+      "cost": 1,
+      "requested": true,
+      "outcome": "received"
+    },
+    {
+      "id": "D7",
+      "title": "Procedure training register",
+      "document_type": "training_record",
+      "owner": "user-01",
+      "revision": 1,
+      "date": "2026-07-31",
+      "cost": 1,
+      "requested": true,
+      "outcome": "received"
+    },
+    {
+      "id": "D8",
+      "title": "Utilities shift log",
+      "document_type": "shift_log",
+      "owner": "user-01",
+      "revision": 1,
+      "date": "2026-07-14",
+      "cost": 1,
+      "requested": false,
+      "outcome": "not_requested"
+    }
+  ],
+  "source_trace": [
+    {
+      "evidence_id": "D2",
+      "revision": 2,
+      "date": "2026-06-01",
+      "owner": "user-02",
+      "locator": "fixture:MFG-003/D2"
+    },
+    {
+      "evidence_id": "D3",
+      "revision": 1,
+      "date": "2026-06-12",
+      "owner": "user-01",
+      "locator": "fixture:MFG-003/D3"
+    },
+    {
+      "evidence_id": "D7",
+      "revision": 1,
+      "date": "2026-07-31",
+      "owner": "user-01",
+      "locator": "fixture:MFG-003/D7"
+    },
+    {
+      "evidence_id": "D5",
+      "revision": 1,
+      "date": "2026-07-31",
+      "owner": "user-02",
+      "locator": "fixture:MFG-003/D5"
+    },
+    {
+      "evidence_id": "D6",
+      "revision": 1,
+      "date": "2026-07-31",
+      "owner": "user-02",
+      "locator": "fixture:MFG-003/D6"
+    }
+  ]
+}

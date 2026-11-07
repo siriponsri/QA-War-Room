@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" role="img" aria-label="Closure cover sheet">
+  <title>Closure cover sheet</title>
+  <rect width="40" height="40" rx="11" fill="#d6f0df"/>
+  <path d="M11 6.5h13l6 6V33a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 10 33V8a1.5 1.5 0 0 1 1-1.5z" fill="#ffffff"/><path d="M24 6.5V12a.5.5 0 0 0 .5.5H30" fill="#9fdab7"/>
+  <path d="M14 15h9M14 19h12" stroke="#0a7a43" stroke-width="1.6" stroke-linecap="round" opacity=".55"/><circle cx="20" cy="27" r="4.6" fill="none" stroke="#0a7a43" stroke-width="1.6"/><path d="M18 27l1.5 1.5 3-3" fill="none" stroke="#0a7a43" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
